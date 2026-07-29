@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pyo
+*.joblib
+*.pkl
+.DS_Store
+Thumbs.db
+.env
