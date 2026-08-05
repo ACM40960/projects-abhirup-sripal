@@ -1,18 +1,28 @@
 # Current implementation scope
 
-At this repository stage, the notebook contains the original prototype implementation:
+At this repository stage, the project contains:
 
-- historical international match loading;
-- five-match rolling form features;
-- tournament importance weights;
-- neutral venue flag;
-- Elo ratings;
-- SVM and MLP classifiers;
-- a four-team Monte Carlo demonstration.
+- reproducible repository and Anaconda environment files;
+- required-column validation for `results.csv`;
+- consistent date and score parsing;
+- removal of incomplete completed-match outcomes;
+- exact-duplicate checks and duplicate match-key reporting;
+- deterministic unique `match_id` values;
+- machine-readable validation outputs;
+- the original prototype modelling stages for rolling form, tournament weights, Elo, SVM, MLP and a four-team Monte Carlo demonstration.
 
-Known issues intentionally left for later commits:
+## Validation result
 
-- rolling-feature merge can duplicate observations;
+- source rows: 49,287;
+- missing-score rows removed: 72;
+- invalid-date rows: 0;
+- exact duplicates removed: 0;
+- completed validated matches: 49,215;
+- matches from 2000 onward: 25,157.
+
+## Known issues reserved for later commits
+
+- the rolling-feature merge can duplicate modelling observations;
 - random train-test splitting is not suitable for forecasting;
 - the full RBF SVM is slow;
 - simulation inputs are not team-specific;

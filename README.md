@@ -4,7 +4,7 @@ This repository contains the current prototype for a mathematical modelling proj
 
 ## Current stage
 
-The repository has been reorganised from the original flat project archive into a reproducible structure. The modelling logic remains the original prototype at this stage. Later commits will address data validation, leakage-safe feature engineering, chronological evaluation, model comparison and team-specific tournament simulation.
+The repository is organised into a reproducible structure and now includes an explicit data-validation stage. The notebook verifies the source schema, removes incomplete match outcomes, reports duplicate match keys, assigns deterministic match identifiers and writes validation outputs. Later commits will address leakage-safe feature engineering, chronological evaluation, model comparison and team-specific tournament simulation.
 
 ## Repository structure
 
@@ -43,7 +43,7 @@ Open `notebooks/world_cup_predictor.ipynb` and select the `Python (World Cup Pre
 
 ## Data
 
-The prototype currently reads `data/results.csv`. The other datasets are retained for later analysis but are not yet integrated into the model.
+The prototype currently reads `data/results.csv`. Validation results are written to `outputs/data_validation_summary.csv` and `outputs/duplicate_match_keys.csv`. The other datasets are retained for later analysis but are not yet integrated into the model.
 
 ## Reproducibility note
 
