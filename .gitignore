@@ -1,9 +1,23 @@
+# Jupyter
 .ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python
 __pycache__/
-*.pyc
-*.pyo
-*.joblib
-*.pkl
+*.py[cod]
+*.egg-info/
+
+# Environments and secrets
+.venv/
+venv/
+.env
+
+# Generated model files
+outputs/*.joblib
+outputs/*.pkl
+
+# OS and editor files
 .DS_Store
 Thumbs.db
-.env
+.vscode/
+.idea/
