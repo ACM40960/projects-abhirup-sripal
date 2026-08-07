@@ -4,7 +4,9 @@ This repository contains the current prototype for a mathematical modelling proj
 
 ## Current stage
 
-The repository is organised into a reproducible structure and now includes an explicit data-validation stage. The notebook verifies the source schema, removes incomplete match outcomes, reports duplicate match keys, assigns deterministic match identifiers and writes validation outputs. Later commits will address leakage-safe feature engineering, chronological evaluation, model comparison and team-specific tournament simulation.
+The repository now contains validated historical match data and leakage-safe rolling team-form features. The form pipeline retains `match_id` for both home and away team perspectives, calculates recent goals scored and conceded from the previous five matches strictly before the current date, and merges the features back with one-to-one identifier joins. This removes the row multiplication present in the original date/team merge.
+
+Later commits will correct match-context features, pre-match Elo, chronological evaluation, model comparison and team-specific tournament simulation.
 
 ## Repository structure
 
@@ -14,14 +16,14 @@ The repository is organised into a reproducible structure and now includes an ex
 ├── notebooks/     Jupyter modelling notebook
 ├── literature/    Literature review
 ├── docs/          Project planning and methodology notes
-├── outputs/       Generated metrics, figures and simulation results
+├── outputs/       Generated validation files, metrics, figures and simulations
 ├── environment.yml
 └── requirements.txt
 ```
 
 ## Run with Anaconda
 
-From Anaconda Prompt, open the repository folder and create the environment:
+From Anaconda Prompt:
 
 ```bat
 conda env create -f environment.yml
@@ -41,10 +43,21 @@ jupyter lab
 
 Open `notebooks/world_cup_predictor.ipynb` and select the `Python (World Cup Predictor)` kernel.
 
-## Data
+## Data and generated validation files
 
-The prototype currently reads `data/results.csv`. Validation results are written to `outputs/data_validation_summary.csv` and `outputs/duplicate_match_keys.csv`. The other datasets are retained for later analysis but are not yet integrated into the model.
+The prototype reads `data/results.csv`.
+
+Commit 3 generated:
+
+- `outputs/data_validation_summary.csv`
+- `outputs/duplicate_match_keys.csv`
+
+Commit 4 adds:
+
+- `outputs/rolling_form_validation.csv`
+
+The other source datasets are retained for later analysis but are not yet integrated into the predictive model.
 
 ## Reproducibility note
 
-The notebook now resolves the project data path from either the repository root or the `notebooks` folder. Generated notebook outputs have been cleared so that results can be reproduced from a fresh kernel.
+The notebook resolves the project path from either the repository root or the `notebooks` folder. Notebook outputs are intentionally cleared before commit so results can be reproduced from a fresh kernel.

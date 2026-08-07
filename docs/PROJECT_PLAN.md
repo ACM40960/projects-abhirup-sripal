@@ -4,12 +4,12 @@ Completed technical stages:
 
 1. [x] Reorganise the project and add reproducible environment files.
 2. [x] Validate the match dataset and assign deterministic match identifiers.
+3. [x] Rebuild rolling team form without future-data leakage or duplicate joins.
 
 Planned technical stages:
 
-3. [ ] Rebuild rolling team form without future-data leakage or duplicate joins.
 4. [ ] Correct tournament importance and venue features.
-5. [ ] Calculate pre-match Elo ratings.
+5. [ ] Calculate and join pre-match Elo ratings using `match_id`.
 6. [ ] Replace random splitting with chronological evaluation.
 7. [ ] Add baseline, calibrated linear SVM and gradient boosting models.
 8. [ ] Expand probability and calibration evaluation.
