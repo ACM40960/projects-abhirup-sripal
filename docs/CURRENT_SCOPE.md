@@ -3,36 +3,28 @@
 At this repository stage, the project contains:
 
 - reproducible repository and Anaconda environment files;
-- required-column validation for `results.csv`;
-- consistent date and score parsing;
-- removal of incomplete completed-match outcomes;
-- exact-duplicate checks and duplicate match-key reporting;
+- validated historical match data;
 - deterministic unique `match_id` values;
-- machine-readable validation outputs;
-- leakage-safe five-match rolling goals-for and goals-against features;
-- strict same-date handling so one match on a date cannot inform another match on that date;
-- one-to-one home and away feature joins using `match_id`;
-- the original later prototype stages for tournament weights, Elo, SVM, MLP and a four-team Monte Carlo demonstration.
+- leakage-safe five-match rolling team-form features;
+- strict same-date handling for rolling form;
+- one-to-one home/away form joins using `match_id`;
+- corrected tournament weighting with case- and accent-normalised matching;
+- validation of tournament-weight assignments.
 
-## Current validation result
+## Commit 5 validation
 
-- source rows: 49,287;
-- missing-score rows removed: 72;
-- completed validated matches: 49,215;
-- matches from 2000 onward: 25,157;
-- team-perspective rows: 50,314;
-- same-day team/date groups handled without leakage: 7;
-- final modelling rows after rolling-form joins: 25,157;
-- unique modelling `match_id` values: 25,157;
-- rows added or lost by the rolling-form merge: 0.
+- modern-era matches: 25,157;
+- modern-era Copa América matches: 248;
+- Copa América matches assigned weight 0.8: 248;
+- Copa América matches assigned weight 0.4: 0.
 
 ## Known issues reserved for later commits
 
-- tournament importance conditions need explicit, case-normalised logic;
-- the Elo merge still needs to be tied directly to `match_id`;
+- the Elo calculation is still joined back using `(date, home_team, away_team)` rather than `match_id`;
+- the Elo merge has no one-to-one validation and is followed by silent `dropna()`;
 - random train-test splitting is not suitable for forecasting;
 - the full RBF SVM is slow;
-- draw detection is weak in the original models;
-- simulation inputs are not team-specific;
+- draw detection remains limited in the original models;
+- simulation inputs are not yet team-specific;
 - the tournament demonstration is not the complete 2026 format;
-- the literature review includes features not implemented in the notebook.
+- the literature review contains features that are not implemented in the current predictor.

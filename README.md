@@ -4,9 +4,7 @@ This repository contains the current prototype for a mathematical modelling proj
 
 ## Current stage
 
-The repository now contains validated historical match data and leakage-safe rolling team-form features. The form pipeline retains `match_id` for both home and away team perspectives, calculates recent goals scored and conceded from the previous five matches strictly before the current date, and merges the features back with one-to-one identifier joins. This removes the row multiplication present in the original date/team merge.
-
-Later commits will correct match-context features, pre-match Elo, chronological evaluation, model comparison and team-specific tournament simulation.
+The repository has been reorganised from the original flat project archive into a reproducible structure. The modelling logic remains the original prototype at this stage. Later commits will address data validation, leakage-safe feature engineering, chronological evaluation, model comparison and team-specific tournament simulation.
 
 ## Repository structure
 
@@ -16,14 +14,14 @@ Later commits will correct match-context features, pre-match Elo, chronological 
 ├── notebooks/     Jupyter modelling notebook
 ├── literature/    Literature review
 ├── docs/          Project planning and methodology notes
-├── outputs/       Generated validation files, metrics, figures and simulations
+├── outputs/       Generated metrics, figures and simulation results
 ├── environment.yml
 └── requirements.txt
 ```
 
 ## Run with Anaconda
 
-From Anaconda Prompt:
+From Anaconda Prompt, open the repository folder and create the environment:
 
 ```bat
 conda env create -f environment.yml
@@ -43,21 +41,14 @@ jupyter lab
 
 Open `notebooks/world_cup_predictor.ipynb` and select the `Python (World Cup Predictor)` kernel.
 
-## Data and generated validation files
+## Data
 
-The prototype reads `data/results.csv`.
-
-Commit 3 generated:
-
-- `outputs/data_validation_summary.csv`
-- `outputs/duplicate_match_keys.csv`
-
-Commit 4 adds:
-
-- `outputs/rolling_form_validation.csv`
-
-The other source datasets are retained for later analysis but are not yet integrated into the predictive model.
+The prototype currently reads `data/results.csv`. The other datasets are retained for later analysis but are not yet integrated into the model.
 
 ## Reproducibility note
 
-The notebook resolves the project path from either the repository root or the `notebooks` folder. Notebook outputs are intentionally cleared before commit so results can be reproduced from a fresh kernel.
+The notebook now resolves the project data path from either the repository root or the `notebooks` folder. Generated notebook outputs have been cleared so that results can be reproduced from a fresh kernel.
+
+## Commit 5: tournament weighting
+
+Tournament names are normalised for case and accents before weights are assigned. The current dataset contains `Copa América`, so all 248 modern-era Copa América matches are validated at the intended 0.8 major-tournament weight. See `docs/TOURNAMENT_WEIGHTING.md` and `outputs/tournament_weight_validation.csv`.
