@@ -1,30 +1,27 @@
 # Current implementation scope
 
-At this repository stage, the project contains:
+Completed at this stage:
 
-- reproducible repository and Anaconda environment files;
-- validated historical match data;
-- deterministic unique `match_id` values;
-- leakage-safe five-match rolling team-form features;
-- strict same-date handling for rolling form;
-- one-to-one home/away form joins using `match_id`;
-- corrected tournament weighting with case- and accent-normalised matching;
-- validation of tournament-weight assignments.
+- reproducible project structure and environment files;
+- validated completed-match dataset with deterministic `match_id`;
+- leakage-safe five-match rolling goals form;
+- corrected and validated tournament weights and neutral-venue feature;
+- deterministic chronological pre-match Elo calculation;
+- same-day Elo batching when kick-off order is unavailable;
+- one-to-one Elo merge using `match_id`;
+- explicit checks for missing Elo values, duplicate identifiers and row-count changes;
+- final team Elo ratings and machine-readable Elo validation outputs.
 
-## Commit 5 validation
+## Current integrity result
 
-- modern-era matches: 25,157;
-- modern-era Copa América matches: 248;
-- Copa América matches assigned weight 0.8: 248;
-- Copa América matches assigned weight 0.4: 0.
+The modern modelling slice contains 25,157 matches. Elo produces exactly 25,157 feature rows and preserves exactly one final modelling row per `match_id`. No Elo values are silently dropped.
 
 ## Known issues reserved for later commits
 
-- the Elo calculation is still joined back using `(date, home_team, away_team)` rather than `match_id`;
-- the Elo merge has no one-to-one validation and is followed by silent `dropna()`;
-- random train-test splitting is not suitable for forecasting;
+- random train/test splitting is not suitable for forecast evaluation;
 - the full RBF SVM is slow;
-- draw detection remains limited in the original models;
-- simulation inputs are not yet team-specific;
-- the tournament demonstration is not the complete 2026 format;
-- the literature review contains features that are not implemented in the current predictor.
+- draw prediction is weak in the original model;
+- simulation inputs are still dummy values rather than team-specific states;
+- the tournament demonstration remains hard-coded to four teams;
+- literature claims still exceed the implemented feature set;
+- placeholder notebook headings remain for later cleanup.

@@ -1,0 +1,10 @@
+metric,value
+modern_matches,25157
+elo_feature_rows,25157
+unique_elo_match_ids,25157
+model_rows_before_elo_merge,25157
+model_rows_after_elo_merge,25157
+duplicate_model_match_ids,0
+missing_elo_values,0
+repeated_team_date_groups,7
+teams_with_final_elo,318
