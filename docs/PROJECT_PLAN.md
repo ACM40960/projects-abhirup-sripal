@@ -7,10 +7,10 @@ Completed technical stages:
 3. [x] Rebuild rolling team form without duplicate joins or current-match leakage.
 4. [x] Correct tournament weighting and match-context features.
 5. [x] Calculate and join pre-match Elo features using `match_id`.
+6. [x] Replace random splitting with chronological evaluation.
 
 Planned technical stages:
 
-6. [ ] Replace random splitting with chronological evaluation.
 7. [ ] Add baseline and efficient comparison models.
 8. [ ] Expand classification and probability evaluation.
 9. [ ] Replace dummy simulation inputs with team-specific states.

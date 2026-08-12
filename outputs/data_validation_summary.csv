@@ -1,13 +1,8 @@
 metric,value
 source_rows,49287
-required_columns,9
-missing_required_columns,0
 invalid_date_rows,0
-missing_score_rows,72
+missing_score_rows_removed,72
 exact_duplicate_rows_removed,0
-duplicate_match_key_groups_reported,1
-duplicate_match_key_rows_reported,2
 validated_completed_matches,49215
 unique_match_ids,49215
-earliest_match_date,1872-11-30
-latest_match_date,2026-03-31
+duplicate_date_home_away_rows,2

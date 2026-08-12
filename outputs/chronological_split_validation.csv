@@ -1,0 +1,10 @@
+metric,value
+evaluation_cutoff,2023-01-01
+total_model_rows,25157
+training_rows,21712
+test_rows,3445
+training_start,2000-01-04
+training_end,2022-12-30
+test_start,2023-01-02
+test_end,2026-03-31
+date_overlap_detected,0

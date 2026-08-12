@@ -1,15 +1,33 @@
-# Commit 5 checklist: tournament weighting correction
+# Commit 5 checklist: tournament weighting and match context
 
-- [x] Normalise tournament names for case and accents.
-- [x] Recognise `Copa América` as `Copa America`.
-- [x] Correct Copa América weight from the previous fallback 0.4 to 0.8.
-- [x] Apply the qualification exclusion to the complete major-final condition.
-- [x] Preserve the intended weights for World Cup, major finals, qualifications, Nations League, friendlies and other competitions.
-- [x] Validate the 248 modern-era Copa América matches.
-- [x] Confirm zero Copa América matches retain weight 0.4.
-- [x] Write a machine-readable tournament-weight validation table.
-- [x] Keep the Commit 4 rolling-form pipeline unchanged.
-- [x] Do not modify the Elo merge; it is Commit 6 scope.
+## Requirements completed
+
+- [x] Case-normalize tournament labels
+- [x] Unicode-normalize accented labels
+- [x] Correct `Copa América` weighting
+- [x] Apply qualification exclusion to the full major-final condition
+- [x] Avoid broad `Euro` substring false positives
+- [x] Preserve the one-row-per-match model table
+- [x] Validate neutral venue as a binary feature
+- [x] Write tournament-level validation output
+- [x] Write aggregate match-context validation output
+- [x] Clear notebook outputs before commit
+
+## Expected supplied-data checks
+
+- Modern-era matches: 25,157
+- Copa América finals: 248
+- Copa América finals assigned 0.8: 248
+- Rows changed versus original tournament-weight logic: 297
+  - 248 Copa América rows corrected from 0.4 to 0.8
+  - 49 CONIFA European Football Cup rows corrected from 0.8 to 0.4
+
+## Scope intentionally left unchanged
+
+- Elo feature join
+- chronological train/test evaluation
+- model replacement
+- team-specific tournament prediction
 
 ## Commit message
 

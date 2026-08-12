@@ -1,129 +1,121 @@
-tournament,match_weight,match_count
-FIFA World Cup,1.0,486
-CONIFA European Football Cup,0.8,58
-Confederations Cup,0.8,96
-Copa América,0.8,248
-UEFA Euro,0.8,277
-AFC Asian Cup qualification,0.6,530
-AFC Challenge Cup qualification,0.6,92
-AFF Championship qualification,0.6,56
-ASEAN Championship qualification,0.6,2
-African Cup of Nations qualification,0.6,1416
-Arab Cup qualification,0.6,22
-CFU Caribbean Cup qualification,0.6,293
-CONCACAF Nations League qualification,0.6,68
-CONIFA World Cup qualification,0.6,1
-CONIFA World Football Cup qualification,0.6,5
-COSAFA Cup qualification,0.6,12
-Copa América qualification,0.6,4
-EAFF Championship qualification,0.6,5
-FIFA World Cup qualification,0.6,5840
-Gold Cup qualification,0.6,81
-Oceania Nations Cup qualification,0.6,15
-UEFA Euro qualification,0.6,1532
-CONCACAF Nations League,0.5,422
-UEFA Nations League,0.5,658
-ABCS Tournament,0.4,20
-AFC Asian Cup,0.4,256
-AFC Challenge Cup,0.4,87
-AFC Solidarity Cup,0.4,13
-AFF Championship,0.4,251
-ASEAN Championship,0.4,26
-African Cup of Nations,0.4,525
-Afro-Asian Games,0.4,4
-Al Ain International Cup,0.4,4
-Amílcar Cabral Cup,0.4,30
-Arab Cup,0.4,92
-Atlantic Heritage Cup,0.4,2
-Baltic Cup,0.4,43
-Benedikt Fontana Cup,0.4,1
-CAFA Nations Cup,0.4,10
-CECAFA Cup,0.4,341
-CFU Caribbean Cup,0.4,98
-CONCACAF Series,0.4,35
-CONIFA Africa Football Cup,0.4,4
-CONIFA Asia Cup,0.4,8
-CONIFA South America Football Cup,0.4,3
-CONIFA World Football Cup,0.4,101
-CONMEBOL–UEFA Cup of Champions,0.4,1
-COSAFA Cup,0.4,326
-Canadian Shield,0.4,4
-ConIFA Challenger Cup,0.4,1
-Copa Confraternidad,0.4,1
-Copa Paz del Chaco,0.4,2
-Copa del Pacífico,0.4,4
-Corsica Cup,0.4,4
-Coupe de l'Outre-Mer,0.4,42
-Cup of Ancient Civilizations,0.4,2
-Cyprus International Tournament,0.4,54
-Diamond Jubilee International Football Tournament,0.4,4
-Dragon Cup,0.4,9
-EAFF Championship,0.4,130
-ELF Cup,0.4,16
-East Asian Games,0.4,1
-FIFA Series,0.4,57
-FIFI Wild Cup,0.4,10
-Gold Cup,0.4,359
-Gulf Cup,0.4,189
-Hungary Heritage Cup,0.4,3
-Indian Ocean Island Games,0.4,68
-Inter Games,0.4,19
-Intercontinental Cup,0.4,17
-"International Tournament of Peoples, Cultures and Tribes",0.4,7
-Island Games,0.4,283
-Jordan International Tournament,0.4,4
-KTFF 50th Anniversary Cup,0.4,3
-King Hassan II Tournament,0.4,4
-King's Cup,0.4,80
-Kirin Challenge Cup,0.4,22
-Kirin Cup,0.4,43
-Lunar New Year Cup,0.4,12
-MSG Prime Minister's Cup,0.4,23
-Mahinda Rajapaksa Cup,0.4,7
-Malta International Tournament,0.4,22
-Mapinduzi Cup,0.4,7
-Marianas Cup,0.4,2
-Mauritius Four Nations Cup,0.4,5
-Melanesia Cup,0.4,10
-Merdeka Tournament,0.4,33
-Millennium Cup,0.4,15
-"Morocco, Capital of African Football",0.4,6
-Mukuru 4 Nations,0.4,2
-Muratti Vase,0.4,46
-Nations Cup,0.4,6
-Navruz Cup,0.4,4
-Nehru Cup,0.4,33
-Niamh Challenge Cup,0.4,3
-Nile Basin Tournament,0.4,14
-Nordic Championship,0.4,10
-OSN Cup,0.4,4
-Oceania Nations Cup,0.4,99
-Outrigger Challenge Cup,0.4,3
-Pacific Games,0.4,75
-Pacific Mini Games,0.4,15
-Palestine International Championship,0.4,11
-Philippine Peace Cup,0.4,12
-Prime Minister's Cup,0.4,22
-SAFF Cup,0.4,135
-SKN Football Festival,0.4,10
-Soccer Ashes,0.4,3
-South Asian Super Cup,0.4,1
-South Pacific Games,0.4,48
-Superclásico de las Américas,0.4,8
-TIFOCO Tournament,0.4,1
-The Other Final,0.4,1
-Three Nations Cup,0.4,3
-Tri Nation Tournament,0.4,7
-Tri-Nations Cup,0.4,2
-Tri-Nations Series,0.4,3
-Tynwald Hill Tournament,0.4,6
-UNCAF Cup,0.4,109
-USA Cup,0.4,6
-United Arab Emirates Friendship Tournament,0.4,7
-Unity Cup,0.4,12
-VFF Cup,0.4,9
-Viva World Cup,0.4,60
-WAFF Championship,0.4,114
-Windward Islands Tournament,0.4,18
-World Unity Cup,0.4,3
-Friendly,0.25,8447
+tournament,original_weight,corrected_weight,modern_match_count,weight_changed
+FIFA World Cup,1.0,1.0,384,False
+UEFA Euro,0.8,0.8,277,False
+Copa América,0.4,0.8,248,True
+Confederations Cup,0.8,0.8,96,False
+FIFA World Cup qualification,0.6,0.6,5840,False
+UEFA Euro qualification,0.6,0.6,1532,False
+African Cup of Nations qualification,0.6,0.6,1416,False
+AFC Asian Cup qualification,0.6,0.6,530,False
+CFU Caribbean Cup qualification,0.6,0.6,293,False
+AFC Challenge Cup qualification,0.6,0.6,92,False
+Gold Cup qualification,0.6,0.6,81,False
+CONCACAF Nations League qualification,0.6,0.6,68,False
+AFF Championship qualification,0.6,0.6,56,False
+Arab Cup qualification,0.6,0.6,22,False
+Oceania Nations Cup qualification,0.6,0.6,15,False
+COSAFA Cup qualification,0.6,0.6,12,False
+CONIFA World Football Cup qualification,0.6,0.6,5,False
+EAFF Championship qualification,0.6,0.6,5,False
+Copa América qualification,0.6,0.6,4,False
+ASEAN Championship qualification,0.6,0.6,2,False
+UEFA Nations League,0.5,0.5,658,False
+CONCACAF Nations League,0.5,0.5,422,False
+African Cup of Nations,0.4,0.4,525,False
+Gold Cup,0.4,0.4,359,False
+CECAFA Cup,0.4,0.4,341,False
+COSAFA Cup,0.4,0.4,326,False
+Island Games,0.4,0.4,283,False
+AFC Asian Cup,0.4,0.4,256,False
+AFF Championship,0.4,0.4,251,False
+Gulf Cup,0.4,0.4,189,False
+SAFF Cup,0.4,0.4,135,False
+EAFF Championship,0.4,0.4,130,False
+WAFF Championship,0.4,0.4,114,False
+UNCAF Cup,0.4,0.4,109,False
+CONIFA World Football Cup,0.4,0.4,101,False
+AFC Challenge Cup,0.4,0.4,100,False
+Oceania Nations Cup,0.4,0.4,99,False
+CFU Caribbean Cup,0.4,0.4,98,False
+Arab Cup,0.4,0.4,92,False
+King's Cup,0.4,0.4,80,False
+Pacific Games,0.4,0.4,75,False
+Indian Ocean Island Games,0.4,0.4,68,False
+Viva World Cup,0.4,0.4,60,False
+FIFA Series,0.4,0.4,57,False
+Cyprus International Tournament,0.4,0.4,54,False
+CONIFA European Football Cup,0.8,0.4,49,True
+South Pacific Games,0.4,0.4,48,False
+Muratti Vase,0.4,0.4,46,False
+Kirin Cup,0.4,0.4,43,False
+Coupe de l'Outre-Mer,0.4,0.4,42,False
+Baltic Cup,0.4,0.4,39,False
+CONCACAF Series,0.4,0.4,35,False
+Merdeka Tournament,0.4,0.4,33,False
+Nehru Cup,0.4,0.4,33,False
+Amílcar Cabral Cup,0.4,0.4,30,False
+ASEAN Championship,0.4,0.4,26,False
+MSG Prime Minister's Cup,0.4,0.4,23,False
+Kirin Challenge Cup,0.4,0.4,22,False
+Malta International Tournament,0.4,0.4,22,False
+Prime Minister's Cup,0.4,0.4,22,False
+ABCS Tournament,0.4,0.4,20,False
+Inter Games,0.4,0.4,19,False
+Windward Islands Tournament,0.4,0.4,18,False
+Intercontinental Cup,0.4,0.4,17,False
+ELF Cup,0.4,0.4,16,False
+Millennium Cup,0.4,0.4,15,False
+Pacific Mini Games,0.4,0.4,15,False
+Nile Basin Tournament,0.4,0.4,14,False
+Lunar New Year Cup,0.4,0.4,12,False
+CAFA Nations Cup,0.4,0.4,10,False
+FIFI Wild Cup,0.4,0.4,10,False
+Melanesia Cup,0.4,0.4,10,False
+Nordic Championship,0.4,0.4,10,False
+SKN Football Festival,0.4,0.4,10,False
+VFF Cup,0.4,0.4,9,False
+Superclásico de las Américas,0.4,0.4,8,False
+Unity Cup,0.4,0.4,8,False
+Mahinda Rajapaksa Cup,0.4,0.4,7,False
+Mapinduzi Cup,0.4,0.4,7,False
+Tri Nation Tournament,0.4,0.4,7,False
+United Arab Emirates Friendship Tournament,0.4,0.4,7,False
+"Morocco, Capital of African Football",0.4,0.4,6,False
+Nations Cup,0.4,0.4,6,False
+Tynwald Hill Tournament,0.4,0.4,6,False
+USA Cup,0.4,0.4,6,False
+Mauritius Four Nations Cup,0.4,0.4,5,False
+Afro-Asian Games,0.4,0.4,4,False
+Al Ain International Cup,0.4,0.4,4,False
+CONIFA Africa Football Cup,0.4,0.4,4,False
+CONIFA Asia Cup,0.4,0.4,4,False
+Canadian Shield,0.4,0.4,4,False
+Copa del Pacífico,0.4,0.4,4,False
+Corsica Cup,0.4,0.4,4,False
+Dragon Cup,0.4,0.4,4,False
+Jordan International Tournament,0.4,0.4,4,False
+King Hassan II Tournament,0.4,0.4,4,False
+Navruz Cup,0.4,0.4,4,False
+OSN Cup,0.4,0.4,4,False
+CONIFA South America Football Cup,0.4,0.4,3,False
+Hungary Heritage Cup,0.4,0.4,3,False
+Niamh Challenge Cup,0.4,0.4,3,False
+Outrigger Challenge Cup,0.4,0.4,3,False
+Soccer Ashes,0.4,0.4,3,False
+Three Nations Cup,0.4,0.4,3,False
+Tri-Nations Series,0.4,0.4,3,False
+World Unity Cup,0.4,0.4,3,False
+Atlantic Heritage Cup,0.4,0.4,2,False
+Copa Paz del Chaco,0.4,0.4,2,False
+Cup of Ancient Civilizations,0.4,0.4,2,False
+Marianas Cup,0.4,0.4,2,False
+Mukuru 4 Nations,0.4,0.4,2,False
+Benedikt Fontana Cup,0.4,0.4,1,False
+CONMEBOL–UEFA Cup of Champions,0.4,0.4,1,False
+ConIFA Challenger Cup,0.4,0.4,1,False
+Copa Confraternidad,0.4,0.4,1,False
+East Asian Games,0.4,0.4,1,False
+South Asian Super Cup,0.4,0.4,1,False
+TIFOCO Tournament,0.4,0.4,1,False
+The Other Final,0.4,0.4,1,False
+Friendly,0.25,0.25,8316,False

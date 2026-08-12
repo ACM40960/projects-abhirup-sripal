@@ -1,0 +1,12 @@
+metric,value
+modern_matches,25157
+rows_changed_vs_original_weight_rules,297
+copa_america_matches,248
+copa_america_matches_weighted_0_8,248
+world_cup_final_weight_1_0,384
+major_final_weight_0_8,621
+qualification_weight_0_6,9973
+nations_league_weight_0_5,1080
+other_weight_0_4,4783
+friendly_weight_0_25,8316
+neutral_matches,7149

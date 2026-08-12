@@ -1,3 +1,3 @@
-date,home_team,away_team,home_score,away_score,tournament,city,country,neutral
-1974-02-17,Tahiti,New Caledonia,2.0,1.0,Friendly,Papeete,Tahiti,False
-1974-02-17,Tahiti,New Caledonia,1.0,2.0,Friendly,Papeete,Tahiti,False
+match_id,date,home_team,away_team,home_score,away_score,tournament
+match_d75534d19f8d3802,1974-02-17,Tahiti,New Caledonia,2.0,1.0,Friendly
+match_60ba311df0a181c1,1974-02-17,Tahiti,New Caledonia,1.0,2.0,Friendly

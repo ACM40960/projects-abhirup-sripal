@@ -4,26 +4,31 @@ This repository contains the current prototype for a mathematical modelling proj
 
 ## Current stage
 
-The repository now contains validated historical match data, leakage-safe rolling form, corrected tournament context, and deterministic pre-match Elo features. Elo is carried by `match_id`, joined one-to-one, and validated so no rows are silently duplicated or dropped. Teams with multiple source matches on the same calendar date receive the same pre-date Elo because no kick-off times are available.
+The repository now contains validated historical match data, leakage-safe rolling form, corrected tournament context, deterministic pre-match Elo features and chronological forecast evaluation.
 
-Random train/test splitting and the original model/simulation choices are retained temporarily and are scheduled for later commits.
+The previous random 80/20 split has been replaced with a fixed date holdout:
+
+- training: matches before 1 January 2023;
+- testing: matches from 1 January 2023 onward.
+
+This means later test matches cannot be randomly mixed into the training period. Standardisation is fitted on training data only.
+
+The original SVM and MLP architectures are retained temporarily. Model replacement and broader probability evaluation are scheduled for the next commits.
 
 ## Repository structure
 
 ```text
 .
-├── data/          Historical match and supporting datasets
-├── notebooks/     Jupyter modelling notebook
-├── literature/    Literature review
-├── docs/          Project planning and methodology notes
-├── outputs/       Generated validation files, ratings, metrics and figures
+├── data/
+├── notebooks/
+├── literature/
+├── docs/
+├── outputs/
 ├── environment.yml
 └── requirements.txt
 ```
 
 ## Run with Anaconda
-
-From Anaconda Prompt:
 
 ```bat
 conda activate worldcup
@@ -34,14 +39,11 @@ Open `notebooks/world_cup_predictor.ipynb` and select the `Python (World Cup Pre
 
 ## Commit validation outputs
 
-The `outputs/` directory now includes:
+The `outputs/` directory includes validation artifacts for data cleaning, rolling form, tournament context, Elo integrity and chronological evaluation.
 
-- `data_validation_summary.csv`
-- `duplicate_match_keys.csv`
-- `rolling_form_validation.csv`
-- `tournament_weight_validation.csv`
-- `match_context_validation.csv`
-- `elo_validation.csv`
-- `final_elo_ratings.csv`
+Commit 7 adds:
+
+- `chronological_split_validation.csv`
+- `chronological_split_class_distribution.csv`
 
 Notebook outputs are cleared before commit so the pipeline can be reproduced from a fresh kernel.
