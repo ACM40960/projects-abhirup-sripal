@@ -13,9 +13,3 @@
 - [x] Keep probability calibration for Commit 9
 - [x] Keep team-specific prediction and tournament restructuring for later commits
 - [x] Clear notebook outputs before commit
-
-## Commit message
-
-```bash
-git commit -m "feat: add baseline and efficient classification models"
-```

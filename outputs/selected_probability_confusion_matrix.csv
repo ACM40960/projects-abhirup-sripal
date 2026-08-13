@@ -1,0 +1,10 @@
+model,actual_label,actual_name,predicted_label,predicted_name,count
+Calibrated Linear SVM,0,Away Win,0,Away Win,646
+Calibrated Linear SVM,0,Away Win,1,Draw,12
+Calibrated Linear SVM,0,Away Win,2,Home Win,378
+Calibrated Linear SVM,1,Draw,0,Away Win,285
+Calibrated Linear SVM,1,Draw,1,Draw,9
+Calibrated Linear SVM,1,Draw,2,Home Win,501
+Calibrated Linear SVM,2,Home Win,0,Away Win,209
+Calibrated Linear SVM,2,Home Win,1,Draw,6
+Calibrated Linear SVM,2,Home Win,2,Home Win,1399

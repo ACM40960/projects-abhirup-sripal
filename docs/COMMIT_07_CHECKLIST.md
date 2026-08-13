@@ -26,9 +26,3 @@
 ## Scope note
 
 Model architecture replacement, expanded probability metrics, team-specific tournament inputs and tournament simulation remain for later commits.
-
-## Commit message
-
-```bash
-git commit -m "fix: replace random split with chronological evaluation"
-```

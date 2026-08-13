@@ -1,50 +1,25 @@
-# Commit 8 model comparison
+# Model comparison
 
-## Purpose
+The final project keeps one transparent probability baseline and two learned candidates.
 
-The earlier notebook relied on a relatively slow RBF SVM and an MLP experiment without a simple benchmark. Commit 8 introduces a compact, reproducible model comparison using the chronological holdout from Commit 7.
-
-## Models
+## Models compared
 
 ### Class-prior baseline
 
-`DummyClassifier(strategy="prior")`
-
-This is the minimum benchmark. It predicts according to the training-set class prior and shows whether the learned classifiers improve on a model that ignores the football features.
+`DummyClassifier(strategy="prior")` ignores the football features and provides a lower benchmark based on the training outcome distribution.
 
 ### Linear SVM
 
-`LinearSVC(class_weight="balanced")`
-
-The linear SVM is substantially cheaper than the previous RBF SVM on this dataset. Class balancing is retained because draws are less common and were poorly detected in the original prototype.
+The Linear SVM uses balanced class weights and standardised features. It is computationally much lighter than the original RBF SVM.
 
 ### Histogram gradient boosting
 
-`HistGradientBoostingClassifier`
+Histogram gradient boosting captures nonlinear relationships between Elo, form and match context. Balanced sample weights are calculated inside the estimator so the minority draw class is not effectively ignored.
 
-This model captures nonlinear relationships between Elo, recent form and match context while remaining efficient on the current tabular dataset.
+## Two views of performance
 
-## Shared evaluation design
+Classification diagnostics report accuracy, balanced accuracy, macro F1, per-class recall and confusion matrices.
 
-Every model uses the same chronological split:
+Probability evaluation is separate. The Linear SVM and balanced gradient-boosting model are both calibrated with the same expanding temporal folds before log loss and multiclass Brier score are compared.
 
-- training: before 2023-01-01
-- testing: 2023-01-01 onward
-
-The Linear SVM uses a `StandardScaler` fitted only on the training set. Histogram gradient boosting and the dummy baseline use the unscaled features.
-
-## Commit 8 metrics
-
-Commit 8 reports:
-
-- accuracy
-- balanced accuracy
-- macro F1
-
-Probability calibration, multiclass log loss and probability-focused diagnostics are intentionally reserved for Commit 9.
-
-## Output
-
-`outputs/model_comparison_classification.csv`
-
-The best classification result in this file is provisional. Final model selection should be based on the probability evaluation introduced in the next commit because the tournament simulator requires meaningful probabilities, not only class labels.
+This distinction matters because the tournament simulator samples from probabilities rather than taking the single highest-probability class.

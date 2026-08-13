@@ -1,37 +1,47 @@
 # Probability calibration and evaluation
 
-The simulator needs outcome probabilities, not just a winning class. Commit 9 therefore compares probability quality on the same 2023 chronological holdout used for classification.
+The tournament simulator needs a full away-win/draw/home-win probability vector, so probability quality is the main selection criterion.
 
-## Fair treatment of the draw class
+## Equal calibration treatment
 
-The Linear SVM already uses `class_weight="balanced"`. Histogram gradient boosting now receives training sample weights from `compute_sample_weight(class_weight="balanced", ...)`.
+Both learned candidates now receive temporal sigmoid calibration.
 
-Using sample weights avoids depending on a particular scikit-learn version exposing a `class_weight` argument on `HistGradientBoostingClassifier`.
+The Linear SVM contains its scaler and class-balanced classifier inside the calibrated pipeline.
 
-The comparison now records recall separately for away wins, draws and home wins. Confusion matrices are also saved so a model cannot look competitive overall while effectively ignoring one class.
+For histogram gradient boosting, balanced training weights are computed inside a small estimator wrapper. This allows the classifier itself to remain class-balanced while the calibration layer is fitted against the natural outcome distribution rather than a reweighted one.
 
-## Temporal calibration
+Five expanding folds are built from unique match dates. Every estimator-training period ends before the corresponding calibration period begins.
 
-The Linear SVM does not produce probabilities natively. Sigmoid calibration uses five expanding folds built from unique match dates. Every estimator-training period ends before its corresponding calibration period begins.
+## Final selection metrics
 
-Scaling sits inside the calibrated pipeline, so each fold fits its scaler only on the historical rows available to that fold.
+The model table reports:
 
-## Probability metrics
+- accuracy
+- balanced accuracy
+- macro F1
+- away-win recall
+- draw recall
+- home-win recall
+- multiclass log loss
+- multiclass Brier score
 
-Multiclass log loss is the primary model-selection metric. Lower values mean the model assigned more probability to the outcomes that actually occurred.
+The final model is selected by lowest log loss, with Brier score used as a secondary check.
 
-The multiclass Brier score is used as a secondary measure. It is the mean summed squared error between the three predicted probabilities and the observed one-hot outcome.
+## Why low draw recall does not imply zero draw probability
 
-Accuracy, balanced accuracy, macro F1 and per-class recall remain in the output for interpretation.
+The selected model rarely makes `Draw` its highest-probability class, so its hard-class draw recall is low. That does not mean it assigns draws negligible probability.
 
-## Files produced
+`outputs/draw_probability_diagnostic.csv` compares the observed test draw rate with the model's mean predicted draw probability and the draw calibration bins. The Monte Carlo simulation samples from this full probability vector, not from the argmax class.
 
-- `outputs/model_per_class_recall.csv`
-- `outputs/model_confusion_matrices.csv`
-- `outputs/calibration_fold_validation.csv`
-- `outputs/probability_model_comparison.csv`
-- `outputs/selected_probability_model.csv`
-- `outputs/selected_model_calibration.csv`
-- `outputs/figures/selected_model_calibration.png`
+The correct interpretation is therefore:
 
-Team-specific feature construction is still deferred to Commit 10.
+- draw recall describes how often `Draw` is the single highest-probability class
+- calibration and log loss describe whether the assigned probabilities are useful for probabilistic simulation
+
+The historical calibration diagnostic does not guarantee a particular draw rate inside the simulated tournament because that tournament contains a different mix of teams and neutral fixtures.
+
+## HGB calibration sensitivity
+
+`outputs/hgb_calibration_sensitivity.csv` records the balanced gradient-boosting model before and after temporal calibration. This check was added because class weighting can alter probability frequencies.
+
+The final comparison is based on the calibrated HGB result, so the selected model is not benefiting from an apples-to-oranges calibration advantage.

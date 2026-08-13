@@ -1,35 +1,22 @@
 # Chronological evaluation
 
-## Purpose
+The original prototype used a random 80/20 train-test split. That is a poor fit for forecasting because later matches can enter training while earlier matches appear in testing.
 
-The original prototype used a random 80/20 train-test split. International football data are chronological, so a random split can place later matches in the training set while earlier matches appear in the test set. That does not reflect the intended forecasting task.
+The final pipeline uses a fixed date boundary:
 
-Commit 7 replaces random splitting with a fixed time-based holdout.
+- training matches occur before 1 January 2023
+- test matches occur on or after 1 January 2023
 
-## Split definition
+For the supplied modern-era modelling data this gives 21,712 training matches and 3,445 test matches.
 
-- Training: matches before 1 January 2023
-- Testing: matches on or after 1 January 2023
+The notebook checks that the two periods do not overlap and that every modelling row belongs to exactly one side of the split.
 
-With the supplied validated modern-era dataset:
+## Preprocessing
 
-- total modelling matches: 25,157
-- training matches: 21,712
-- testing matches: 3,445
-- training period: 2000-01-04 to 2022-12-30
-- testing period: 2023-01-02 to 2026-03-31
+Scaling is only required by the Linear SVM. It is fitted inside the relevant training pipeline rather than on the full dataset. During temporal calibration, each SVM fold therefore learns its scaler from that fold's historical estimator-training rows.
 
-The notebook explicitly raises an error if the latest training date overlaps the earliest testing date.
+Tree-based models use the unscaled feature values.
 
-## Scaling rule
+## Why this matters
 
-`StandardScaler` is fitted only on the training subset. The test subset is transformed with the fitted training scaler. This prevents test-set statistics from being used during preprocessing.
-
-## Model scope
-
-Commit 7 changes evaluation design only. The existing RBF SVM and MLP are retained temporarily so the effect of changing the evaluation protocol remains isolated. More efficient comparison models are planned for Commit 8.
-
-## Generated outputs
-
-- `outputs/chronological_split_validation.csv`
-- `outputs/chronological_split_class_distribution.csv`
+The reported metrics are intended to approximate a forecasting setting. A model evaluated on randomly mixed historical periods can benefit from information patterns that would not have been available at the time of the earlier test matches.

@@ -31,9 +31,3 @@
 ## Scope note
 
 The random 80/20 split and original RBF SVM are intentionally retained. Chronological evaluation is the next commit.
-
-## Commit message
-
-```bash
-git commit -m "fix: use match identifiers for pre-match Elo features"
-```

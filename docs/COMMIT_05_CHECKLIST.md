@@ -28,9 +28,3 @@
 - chronological train/test evaluation
 - model replacement
 - team-specific tournament prediction
-
-## Commit message
-
-```bash
-git commit -m "fix: correct tournament weighting and match context features"
-```
