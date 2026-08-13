@@ -1,19 +1,37 @@
 # World Cup Match Outcome Predictor
 
-This repository contains the current prototype for a mathematical modelling project on predicting international football match outcomes and simulating a World Cup tournament.
+This repository contains a mathematical-modelling project for predicting international football match outcomes and using those predictions in a World Cup simulation.
 
 ## Current stage
 
-The repository now contains validated historical match data, leakage-safe rolling form, corrected tournament context, deterministic pre-match Elo features and chronological forecast evaluation.
+The pipeline now includes:
 
-The previous random 80/20 split has been replaced with a fixed date holdout:
+- validated international match results;
+- deterministic match identifiers;
+- leakage-safe rolling team form;
+- corrected tournament context;
+- pre-match Elo ratings;
+- chronological evaluation using a 2023 holdout;
+- a class-prior benchmark;
+- a class-balanced Linear SVM;
+- histogram gradient boosting.
 
-- training: matches before 1 January 2023;
-- testing: matches from 1 January 2023 onward.
+Commit 8 replaces the active slow RBF-SVM/MLP comparison with a smaller and more reproducible classification benchmark. Every model uses the same chronological test set.
 
-This means later test matches cannot be randomly mixed into the training period. Standardisation is fitted on training data only.
+Current classification metrics are:
 
-The original SVM and MLP architectures are retained temporarily. Model replacement and broader probability evaluation are scheduled for the next commits.
+- accuracy;
+- balanced accuracy;
+- macro F1.
+
+Probability calibration, log loss and probability-focused model selection are reserved for Commit 9.
+
+## Chronological split
+
+- Training: matches before 1 January 2023
+- Testing: matches from 1 January 2023 onward
+
+The Linear SVM scaler is fitted only on the training sample.
 
 ## Repository structure
 
@@ -37,13 +55,8 @@ jupyter lab
 
 Open `notebooks/world_cup_predictor.ipynb` and select the `Python (World Cup Predictor)` kernel.
 
-## Commit validation outputs
+## Commit 8 output
 
-The `outputs/` directory includes validation artifacts for data cleaning, rolling form, tournament context, Elo integrity and chronological evaluation.
+`outputs/model_comparison_classification.csv`
 
-Commit 7 adds:
-
-- `chronological_split_validation.csv`
-- `chronological_split_class_distribution.csv`
-
-Notebook outputs are cleared before commit so the pipeline can be reproduced from a fresh kernel.
+Notebook execution outputs are cleared before commit so results can be reproduced from a fresh kernel.
