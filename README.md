@@ -51,4 +51,3 @@ jupyter lab
 
 Open `notebooks/world_cup_predictor.ipynb` with the `Python (World Cup Predictor)` kernel.
 
-Commit 11 is the final cleanup and submission pass.
