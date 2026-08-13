@@ -1,0 +1,49 @@
+group,seed_position,team,current_elo,selection_note
+Group A,1,Spain,1901.6554651925117,top_48_by_current_elo_demo
+Group A,2,Uzbekistan,1710.492401398083,top_48_by_current_elo_demo
+Group A,3,Ecuador,1709.246170913915,top_48_by_current_elo_demo
+Group A,4,Paraguay,1628.8668980607688,top_48_by_current_elo_demo
+Group B,1,Argentina,1879.6292717627416,top_48_by_current_elo_demo
+Group B,2,Switzerland,1715.2607418025625,top_48_by_current_elo_demo
+Group B,3,Egypt,1698.914522049573,top_48_by_current_elo_demo
+Group B,4,Mali,1631.2917593079642,top_48_by_current_elo_demo
+Group C,1,France,1870.5082607966856,top_48_by_current_elo_demo
+Group C,2,United States,1718.0628439233087,top_48_by_current_elo_demo
+Group C,3,Denmark,1698.1375361469961,top_48_by_current_elo_demo
+Group C,4,Sweden,1631.404336673596,top_48_by_current_elo_demo
+Group D,1,England,1823.8005421437836,top_48_by_current_elo_demo
+Group D,2,Algeria,1731.4253986672643,top_48_by_current_elo_demo
+Group D,3,Turkey,1695.1863282029449,top_48_by_current_elo_demo
+Group D,4,Poland,1633.2918102168424,top_48_by_current_elo_demo
+Group E,1,Brazil,1814.0386667371129,top_48_by_current_elo_demo
+Group E,2,Uruguay,1736.460860526976,top_48_by_current_elo_demo
+Group E,3,Ivory Coast,1686.230373048202,top_48_by_current_elo_demo
+Group E,4,Serbia,1635.0843958344444,top_48_by_current_elo_demo
+Group F,1,Japan,1802.3833869291686,top_48_by_current_elo_demo
+Group F,2,Mexico,1742.7410791624475,top_48_by_current_elo_demo
+Group F,3,Canada,1684.9582852228332,top_48_by_current_elo_demo
+Group F,4,Saudi Arabia,1639.645513485649,top_48_by_current_elo_demo
+Group G,1,Portugal,1802.2402623338376,top_48_by_current_elo_demo
+Group G,2,Australia,1747.217558207715,top_48_by_current_elo_demo
+Group G,3,Nigeria,1680.362836315628,top_48_by_current_elo_demo
+Group G,4,Cameroon,1643.4826097760651,top_48_by_current_elo_demo
+Group H,1,Germany,1799.2990256778564,top_48_by_current_elo_demo
+Group H,2,Croatia,1752.654618434397,top_48_by_current_elo_demo
+Group H,3,Russia,1676.0069640989868,top_48_by_current_elo_demo
+Group H,4,Costa Rica,1652.1685428386677,top_48_by_current_elo_demo
+Group I,1,Morocco,1798.8278439847095,top_48_by_current_elo_demo
+Group I,2,South Korea,1753.9963325549156,top_48_by_current_elo_demo
+Group I,3,Tunisia,1673.2000536956868,top_48_by_current_elo_demo
+Group I,4,Jersey,1652.8773225047155,top_48_by_current_elo_demo
+Group J,1,Netherlands,1797.388710208772,top_48_by_current_elo_demo
+Group J,2,Belgium,1755.7525373479377,top_48_by_current_elo_demo
+Group J,3,Panama,1672.8697739690037,top_48_by_current_elo_demo
+Group J,4,Jordan,1653.2438624486385,top_48_by_current_elo_demo
+Group K,1,Iran,1770.760500201272,top_48_by_current_elo_demo
+Group K,2,Senegal,1756.414975182119,top_48_by_current_elo_demo
+Group K,3,Iraq,1672.501734540355,top_48_by_current_elo_demo
+Group K,4,Ukraine,1653.4983407669986,top_48_by_current_elo_demo
+Group L,1,Colombia,1764.1367965503032,top_48_by_current_elo_demo
+Group L,2,Italy,1758.3283939201908,top_48_by_current_elo_demo
+Group L,3,Norway,1660.5787288365743,top_48_by_current_elo_demo
+Group L,4,Austria,1659.6097965116217,top_48_by_current_elo_demo

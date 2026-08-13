@@ -1,0 +1,11 @@
+metric,value
+configured_teams,48.0
+configured_groups,12.0
+teams_per_group,4.0
+automatic_top_two_qualifiers,24.0
+best_third_place_qualifiers,8.0
+round_of_32_teams,32.0
+simulation_iterations,2000.0
+simulation_seed,42.0
+champion_probability_sum,1.0
+cached_probability_matchups,2207.0

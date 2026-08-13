@@ -10,11 +10,14 @@ Completed:
 6. [x] Replace random splitting with chronological evaluation
 7. [x] Add a class-prior baseline and efficient classification models
 8. [x] Add class-balanced probability calibration and expanded evaluation
+9. [x] Replace dummy prediction inputs with team-specific states and add tournament simulation
 
-Next:
+Final consolidation:
 
-9. [ ] Replace dummy prediction inputs with team-specific states
-10. [ ] Implement the configurable World Cup tournament simulation
-11. [ ] Align the literature review with the implemented methodology
-12. [ ] Generate final results and poster material
-13. [ ] Remove notebook leftovers, check documentation consistency and verify a clean end-to-end release
+10. [ ] Align literature and methodology with the implementation
+11. [ ] Produce final result and poster-ready outputs
+12. [ ] Remove notebook leftovers and redundant preprocessing
+13. [ ] Clean repeated documentation patterns
+14. [ ] Verify a fresh end-to-end run and prepare the final release
+
+These final items are intentionally grouped into Commit 11 rather than split into separate Git commits.

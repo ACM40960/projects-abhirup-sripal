@@ -1,25 +1,28 @@
 # Current implementation scope
 
-Completed so far:
+The functional modelling pipeline is now complete.
 
-- Validated match data with deterministic `match_id`
-- Leakage-safe five-match rolling form
-- Corrected tournament and neutral-venue context
-- Pre-match Elo ratings with same-day batching
-- One-to-one Elo joins using `match_id`
-- Chronological evaluation using a 2023 holdout
-- Class-prior baseline
-- Class-balanced Linear SVM
-- Histogram gradient boosting trained with balanced sample weights
-- Temporal probability calibration for the Linear SVM
-- Multiclass log loss and Brier evaluation
-- Per-class recall and confusion-matrix diagnostics
-- Probability-based provisional model selection
+It includes:
 
-## Current modelling position
+- Validated historical match data with deterministic `match_id`
+- Leakage-safe rolling form
+- Tournament context and neutral-venue features
+- Pre-match Elo ratings
+- Chronological model evaluation
+- Class-balanced classification comparison
+- Temporal probability calibration
+- Log loss, Brier score, confusion matrices and per-class recall
+- Team-specific feature construction
+- Neutral-order-symmetric match probabilities
+- Configurable 48-team-style tournament simulation
+- Monte Carlo stage and champion probabilities
 
-Linear SVM gives a lightweight linear benchmark, while histogram gradient boosting can capture nonlinear relationships between Elo, form and match context.
+## Current prediction flow
 
-Draw performance is now reported explicitly rather than inferred from macro metrics. This matters because the original prototype and the unweighted gradient-boosting comparison both struggled badly with draws.
+A new fixture looks up both teams in the latest state snapshot, builds the eight model features and passes them to the probability model selected in Commit 9.
 
-Still to do: genuine team-specific prediction, configurable tournament simulation, literature-methodology alignment, poster outputs and final cleanup.
+Tournament matches use neutral-venue predictions. The simulator then propagates those probabilities through group matches and knockout rounds.
+
+## Remaining work
+
+Commit 11 is the final consolidation pass: remove obsolete notebook sections, clean repeated documentation patterns, align the literature and methodology with the implemented project, prepare final result/poster material and verify a clean end-to-end run.
