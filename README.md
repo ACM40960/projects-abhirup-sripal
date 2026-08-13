@@ -1,50 +1,36 @@
 # World Cup Match Outcome Predictor
 
-This repository contains a mathematical-modelling project for predicting international football match outcomes and using those predictions in a World Cup simulation.
+This project predicts international football match outcomes and uses those probabilities as the basis for tournament simulation.
 
-## Current stage
+The current pipeline includes:
 
-The pipeline now includes:
+- Validated historical match results
+- Deterministic match identifiers
+- Leakage-safe rolling team form
+- Tournament context and neutral-venue features
+- Pre-match Elo ratings
+- A chronological 2023 test holdout
+- Class-prior, Linear SVM and histogram gradient boosting benchmarks
+- Balanced treatment of the minority draw class for both learned models
+- Temporal SVM calibration
+- Log loss, Brier score, per-class recall and confusion-matrix diagnostics
 
-- validated international match results;
-- deterministic match identifiers;
-- leakage-safe rolling team form;
-- corrected tournament context;
-- pre-match Elo ratings;
-- chronological evaluation using a 2023 holdout;
-- a class-prior benchmark;
-- a class-balanced Linear SVM;
-- histogram gradient boosting.
+## Evaluation
 
-Commit 8 replaces the active slow RBF-SVM/MLP comparison with a smaller and more reproducible classification benchmark. Every model uses the same chronological test set.
+Training uses matches before 1 January 2023. Matches from 1 January 2023 onward form the test set.
 
-Current classification metrics are:
+Histogram gradient boosting is trained with balanced sample weights. The Linear SVM uses balanced class weights and temporal sigmoid calibration. Model selection for tournament probabilities is based primarily on test-set log loss, not raw accuracy.
 
-- accuracy;
-- balanced accuracy;
-- macro F1.
+Commit 9 produces:
 
-Probability calibration, log loss and probability-focused model selection are reserved for Commit 9.
+- `outputs/model_per_class_recall.csv`
+- `outputs/model_confusion_matrices.csv`
+- `outputs/probability_model_comparison.csv`
+- `outputs/selected_probability_model.csv`
+- `outputs/selected_model_calibration.csv`
+- `outputs/figures/selected_model_calibration.png`
 
-## Chronological split
-
-- Training: matches before 1 January 2023
-- Testing: matches from 1 January 2023 onward
-
-The Linear SVM scaler is fitted only on the training sample.
-
-## Repository structure
-
-```text
-.
-├── data/
-├── notebooks/
-├── literature/
-├── docs/
-├── outputs/
-├── environment.yml
-└── requirements.txt
-```
+The existing four-team simulation is still a placeholder because it does not yet construct features from the named teams. That is the next modelling step.
 
 ## Run with Anaconda
 
@@ -53,10 +39,4 @@ conda activate worldcup
 jupyter lab
 ```
 
-Open `notebooks/world_cup_predictor.ipynb` and select the `Python (World Cup Predictor)` kernel.
-
-## Commit 8 output
-
-`outputs/model_comparison_classification.csv`
-
-Notebook execution outputs are cleared before commit so results can be reproduced from a fresh kernel.
+Open `notebooks/world_cup_predictor.ipynb` and use the `Python (World Cup Predictor)` kernel.

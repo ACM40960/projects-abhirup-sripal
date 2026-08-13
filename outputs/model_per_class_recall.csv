@@ -1,0 +1,10 @@
+model,class_label,class_name,recall
+Class-prior baseline,0,Away Win,0.0
+Class-prior baseline,1,Draw,0.0
+Class-prior baseline,2,Home Win,1.0
+Linear SVM,0,Away Win,0.6911196911196911
+Linear SVM,1,Draw,0.04025157232704402
+Linear SVM,2,Home Win,0.7998760842627014
+Balanced HistGradientBoosting,0,Away Win,0.637065637065637
+Balanced HistGradientBoosting,1,Draw,0.2490566037735849
+Balanced HistGradientBoosting,2,Home Win,0.6604708798017348

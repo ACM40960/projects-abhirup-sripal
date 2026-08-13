@@ -1,0 +1,2 @@
+probability_rank,model,accuracy,balanced_accuracy,macro_f1,away_win_recall,draw_recall,home_win_recall,log_loss,multiclass_brier
+1,Calibrated Linear SVM,0.5962264150943396,0.5005544868910233,0.4448527986786796,0.6235521235521235,0.011320754716981131,0.8667905824039653,0.8917168443227387,0.5249155607356902

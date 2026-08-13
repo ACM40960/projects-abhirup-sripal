@@ -1,33 +1,25 @@
 # Current implementation scope
 
-Completed at this stage:
+Completed so far:
 
-- reproducible project structure and environment files;
-- validated completed-match dataset with deterministic `match_id`;
-- leakage-safe five-match rolling goals form;
-- corrected tournament weights and neutral-venue context;
-- deterministic pre-match Elo calculation with same-day batching;
-- one-to-one Elo integration using `match_id`;
-- chronological forecast evaluation using a 2023 holdout;
-- training-only standardisation;
-- class-prior baseline;
-- class-balanced Linear SVM;
-- histogram gradient boosting;
-- shared classification comparison using accuracy, balanced accuracy and macro F1.
+- Validated match data with deterministic `match_id`
+- Leakage-safe five-match rolling form
+- Corrected tournament and neutral-venue context
+- Pre-match Elo ratings with same-day batching
+- One-to-one Elo joins using `match_id`
+- Chronological evaluation using a 2023 holdout
+- Class-prior baseline
+- Class-balanced Linear SVM
+- Histogram gradient boosting trained with balanced sample weights
+- Temporal probability calibration for the Linear SVM
+- Multiclass log loss and Brier evaluation
+- Per-class recall and confusion-matrix diagnostics
+- Probability-based provisional model selection
 
-## Current model evaluation
+## Current modelling position
 
-All active models are evaluated on exactly the same chronological test period. The class-prior dummy classifier provides the minimum benchmark. The Linear SVM provides an efficient linear decision model and histogram gradient boosting provides a nonlinear tabular model.
+Linear SVM gives a lightweight linear benchmark, while histogram gradient boosting can capture nonlinear relationships between Elo, form and match context.
 
-The old RBF SVM and MLP are no longer part of the active comparison path.
+Draw performance is now reported explicitly rather than inferred from macro metrics. This matters because the original prototype and the unweighted gradient-boosting comparison both struggled badly with draws.
 
-## Still reserved for later commits
-
-- probability calibration;
-- multiclass log loss and probability-quality diagnostics;
-- final probability-based model selection;
-- team-specific prediction states;
-- configurable tournament simulation;
-- literature-methodology alignment;
-- poster/final result generation;
-- final clean reproducibility release.
+Still to do: genuine team-specific prediction, configurable tournament simulation, literature-methodology alignment, poster outputs and final cleanup.

@@ -1,0 +1,28 @@
+model,actual_label,actual_name,predicted_label,predicted_name,count
+Class-prior baseline,0,Away Win,0,Away Win,0
+Class-prior baseline,0,Away Win,1,Draw,0
+Class-prior baseline,0,Away Win,2,Home Win,1036
+Class-prior baseline,1,Draw,0,Away Win,0
+Class-prior baseline,1,Draw,1,Draw,0
+Class-prior baseline,1,Draw,2,Home Win,795
+Class-prior baseline,2,Home Win,0,Away Win,0
+Class-prior baseline,2,Home Win,1,Draw,0
+Class-prior baseline,2,Home Win,2,Home Win,1614
+Linear SVM,0,Away Win,0,Away Win,716
+Linear SVM,0,Away Win,1,Draw,26
+Linear SVM,0,Away Win,2,Home Win,294
+Linear SVM,1,Draw,0,Away Win,337
+Linear SVM,1,Draw,1,Draw,32
+Linear SVM,1,Draw,2,Home Win,426
+Linear SVM,2,Home Win,0,Away Win,295
+Linear SVM,2,Home Win,1,Draw,28
+Linear SVM,2,Home Win,2,Home Win,1291
+Balanced HistGradientBoosting,0,Away Win,0,Away Win,660
+Balanced HistGradientBoosting,0,Away Win,1,Draw,198
+Balanced HistGradientBoosting,0,Away Win,2,Home Win,178
+Balanced HistGradientBoosting,1,Draw,0,Away Win,298
+Balanced HistGradientBoosting,1,Draw,1,Draw,198
+Balanced HistGradientBoosting,1,Draw,2,Home Win,299
+Balanced HistGradientBoosting,2,Home Win,0,Away Win,230
+Balanced HistGradientBoosting,2,Home Win,1,Draw,318
+Balanced HistGradientBoosting,2,Home Win,2,Home Win,1066
