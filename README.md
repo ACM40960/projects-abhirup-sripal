@@ -111,13 +111,13 @@ That's a more realistic setup for a forecasting problem than mixing earlier and 
 
 ## Model Training
 
-The final comparison covers three candidates: a calibrated Linear SVM, a calibrated and class-balanced HistGradientBoosting model, and a class-prior baseline. Both learned models get the same treatment — calibration using expanding time-based folds rather than random cross-validation — so the comparison between them is fair. The baseline exists so the learned models have something honest to beat: the natural class distribution, nothing more.
+The final comparison covers three candidates: a calibrated Linear SVM, a calibrated and class-balanced HistGradientBoosting model, and a class-prior baseline. Both learned models get the same treatment, calibration using expanding time-based folds rather than random cross-validation, so the comparison between them is fair. The baseline exists so the learned models have something honest to beat: the natural class distribution, nothing more.
 
 ## Model Evaluation
 
 The final model is evaluated on matches from 2023-2026 that were never part of training. The metrics tracked are accuracy, Macro F1, log loss, multiclass Brier score, class-wise recall, and probability calibration.
 
-Log loss is the metric that decides model selection, because the tournament simulation downstream uses the full probability vector rather than a single predicted class. That means a model can still be useful for simulation even when one outcome class is rarely its single most likely prediction — which turns out to matter a lot for draws, covered below.
+Log loss is the metric that decides model selection, because the tournament simulation downstream uses the full probability vector rather than a single predicted class. That means a model can still be useful for simulation even when one outcome class is rarely its single most likely prediction, which turns out to matter a lot for draws, covered below.
 
 ## Final Results
 
@@ -127,7 +127,7 @@ Log loss is the metric that decides model selection, because the tournament simu
 | Calibrated Balanced HistGradientBoosting | 58.35% | 0.429 | 0.926 | 0.543 |
 | Class-prior baseline | 46.85% | 0.213 | 1.056 | 0.637 |
 
-The Calibrated Linear SVM was selected for the final pipeline on the strength of its chronological test-set log loss — the lowest of the three. Against the class-prior baseline, it lifts accuracy from 46.85% to 59.62% and cuts log loss from 1.056 to 0.892.
+The Calibrated Linear SVM was selected for the final pipeline on the strength of its chronological test-set log loss, the lowest of the three. Against the class-prior baseline, it lifts accuracy from 46.85% to 59.62% and cuts log loss from 1.056 to 0.892.
 
 ### Calibration
 
@@ -145,7 +145,7 @@ Draws are still the hardest outcome once predictions get collapsed into a single
 - Mean predicted draw probability: 22.45%
 - Argmax draw recall: 1.13%
 
-That last number looks bad on its own, and in a strict classification sense it is — draw is almost never the single highest-probability class the model outputs. But the average predicted draw probability tracks the real draw frequency closely, which is the number that actually matters here, because the tournament simulator doesn't pick the highest-probability outcome and stop. It samples from the full away win / draw / home win distribution. A model that quietly assigns realistic draw probability without ever "winning" the argmax is exactly what that simulation needs, which is why calibration and log loss carry more weight in this project than hard draw classification does.
+That last number looks bad on its own, and in a strict classification sense it is , draw is almost never the single highest-probability class the model outputs. But the average predicted draw probability tracks the real draw frequency closely, which is the number that actually matters here, because the tournament simulator doesn't pick the highest-probability outcome and stop. It samples from the full away win / draw / home win distribution. A model that quietly assigns realistic draw probability without ever "winning" the argmax is exactly what that simulation needs, which is why calibration and log loss carry more weight in this project than hard draw classification does.
 
 The full diagnostic is in `outputs/draw_probability_diagnostic.csv`.
 
@@ -290,7 +290,7 @@ It covers dataset preparation, leakage-safe feature engineering, Elo methodology
 
 The model doesn't account for player injuries, squad availability, or player-level strength, and it doesn't take bookmaker odds as an input or model the scoreline directly. It also doesn't have the final confirmed 2026 participant list or the exact official FIFA knockout mapping to work from.
 
-International teams play irregular schedules too, so a five-match form window doesn't represent the same stretch of calendar time for every team. And because the tournament simulation chains many uncertain matches together, the championship probabilities compound that uncertainty rather than resolving it — they're estimates, not predictions to bank on.
+International teams play irregular schedules too, so a five-match form window doesn't represent the same stretch of calendar time for every team. And because the tournament simulation chains many uncertain matches together, the championship probabilities compound that uncertainty rather than resolving it.
 
 ## Literature Review
 
@@ -298,7 +298,7 @@ The literature review in `literature/` was written earlier in the project and re
 
 ## Future Work
 
-Worth exploring next: player availability and injury data, squad-strength or player-level ratings, and a direct comparison against bookmaker probabilities. On the modelling side, different Elo update rules and more dynamic team-strength models are both open questions, along with adding an explicit scoreline model. On the simulation side, using the confirmed 2026 participants and the actual FIFA group/knockout structure would make the tournament output far more meaningful than the current demonstration — and running more than 2,000 simulations would tighten the probability estimates themselves.
+Worth exploring next: player availability and injury data, squad-strength or player-level ratings, and a direct comparison against bookmaker probabilities. On the modelling side, different Elo update rules and more dynamic team-strength models are both open questions, along with adding an explicit scoreline model. On the simulation side, using the confirmed 2026 participants and the actual FIFA group/knockout structure would make the tournament output far more meaningful than the current demonstration and running more than 2,000 simulations would tighten the probability estimates themselves.
 
 ## References
 
