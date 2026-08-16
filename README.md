@@ -172,7 +172,7 @@ The original literature review is retained at `literature/Literature_Review.pdf`
 
 Useful extensions include player/squad availability, bookmaker probability comparison, an explicit scoreline model, alternative Elo update rules, sequential in-tournament state updating and an exact official tournament bracket/venue implementation.
 
-## Author
+## Authors
 
 **Abhirup and Sripal**  
 MSc Data and Computational Science  
