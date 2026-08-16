@@ -19,5 +19,5 @@ Completed development stages:
 
 ## Post-tournament extension
 
-15. [x] Add retrospective 2026 World Cup validation using the frozen Commit 11 model
+15. [x] Add retrospective 2026 World Cup validation using the frozen previous commit model
 16. [x] Add bootstrap uncertainty and actual-field progression comparison

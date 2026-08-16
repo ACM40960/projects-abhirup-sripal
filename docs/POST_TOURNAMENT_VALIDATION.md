@@ -1,12 +1,12 @@
 # Post-tournament validation of the 2026 World Cup
 
-Commit 12 adds a retrospective evaluation layer after the completed tournament. It does not modify the Commit 11 classifier, calibration procedure or selection rule.
+Latest commit adds a retrospective evaluation layer after the completed tournament. It does not modify the previous commit classifier, calibration procedure or selection rule.
 
 ## Freeze rules
 
 The backtest enforces the following constraints:
 
-- final probability model remains the Commit 11 Calibrated Linear SVM
+- final probability model remains the previous commit Calibrated Linear SVM
 - classifier training remains on matches before 1 January 2023
 - the existing chronological holdout remains unchanged
 - the Elo/form state uses completed project data only through 31 March 2026
@@ -23,7 +23,7 @@ The World Cup analysis therefore leads with multiclass log loss, multiclass Brie
 
 ## Small-sample uncertainty
 
-A World Cup contains only 104 matches. Commit 12 uses 5,000 fixed-seed bootstrap resamples and reports 95% percentile intervals for accuracy, log loss and Brier score.
+A World Cup contains only 104 matches. The latest commit uses 5,000 fixed-seed bootstrap resamples and reports 95% percentile intervals for accuracy, log loss and Brier score.
 
 These are descriptive uncertainty intervals, not a new model-selection exercise.
 

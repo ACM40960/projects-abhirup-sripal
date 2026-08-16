@@ -23,4 +23,4 @@ The remaining limitations are methodological rather than unfinished code: the mo
 
 ## Post-tournament extension
 
-Commit 12 adds a retrospective 2026 World Cup backtest after the frozen Commit 11 pipeline. Actual outcomes are isolated from model development, probability metrics are reported with bootstrap uncertainty, and a separate actual-field simulation is compared with observed tournament progression.
+Latest commit adds a retrospective 2026 World Cup backtest after the frozen previous commit pipeline. Actual outcomes are isolated from model development, probability metrics are reported with bootstrap uncertainty, and a separate actual-field simulation is compared with observed tournament progression.

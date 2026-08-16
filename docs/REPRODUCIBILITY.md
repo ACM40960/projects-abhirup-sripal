@@ -30,7 +30,7 @@ Execution outputs are cleared in the committed notebook. Run all cells from a fr
 
 The obsolete `Chapter 1` / `Chapter 2` placeholders, standalone PCA/correlation experiment and redundant pre-Elo scaler have been removed from the final notebook.
 
-## Commit 12 retrospective checks
+## Retrospective checks
 
 A fresh run should also reproduce:
 
