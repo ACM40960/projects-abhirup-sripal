@@ -23,3 +23,4 @@
 - [x] Extend `.gitignore` for those artefacts
 - [x] Run the notebook fresh end to end
 - [x] Clear committed notebook outputs
+- [x] Correct bootstrap plot error-bar distances and validate interval bounds
