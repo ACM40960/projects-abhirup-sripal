@@ -320,13 +320,12 @@ University College Dublin
 
 ## Retrospective 2026 World Cup validation
 
-Commit 12 adds a separate post-tournament backtest over all 104 World Cup matches.
+This section adds a post-tournament backtest covering all 104 World Cup matches.
 
-The selected Commit 11 Calibrated Linear SVM is frozen. Actual tournament outcomes are not used for retraining, retuning or model reselection. The backtest uses the March 2026 Elo/form state for every fixture and reports probability metrics, bootstrap uncertainty, draw diagnostics and an actual-field tournament progression comparison.
+The selected Calibrated Linear SVM is frozen for this analysis — actual tournament outcomes were not used to retrain, retune, or reselect the model. Every fixture is evaluated using the March 2026 Elo/form state, and the backtest reports probability metrics, bootstrap uncertainty, draw diagnostics, and a comparison against the actual tournament progression.
 
-See `docs/POST_TOURNAMENT_VALIDATION.md` for methodology and data provenance.
+Methodology and data provenance are documented in `docs/POST_TOURNAMENT_VALIDATION.md`.
 
+Across the 104 matches, the model scored 60.6% accuracy, 0.884 log loss, and 0.524 multiclass Brier, with 5,000-resample uncertainty intervals in `docs/FINAL_RESULTS.md`.
 
-World Cup backtest headline: **60.6% accuracy, 0.884 log loss and 0.524 multiclass Brier across 104 matches**, with 5,000-resample uncertainty intervals reported in `docs/FINAL_RESULTS.md`.
-
-The post-tournament results are evaluation-only and do not change the Commit 11 model choice.
+These results are evaluation-only and don't affect the original model choice.
