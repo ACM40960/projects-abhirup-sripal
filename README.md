@@ -315,7 +315,7 @@ The full literature review and the rest of the references are in the `literature
 ## Author
 
 **Abhirup and Sripal**,
-MSc Data and Computational Science
+MSc Data and Computational Science,
 University College Dublin
 
 ## Retrospective 2026 World Cup validation
