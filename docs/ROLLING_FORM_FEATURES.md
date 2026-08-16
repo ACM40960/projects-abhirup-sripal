@@ -6,14 +6,12 @@ When a team has multiple matches on the same calendar date, all matches on that 
 
 Home and away form are joined back to the match table by `match_id` with one-to-one merge validation. The feature stage must preserve exactly one modelling row per match.
 
-Commit 4 validation results carried into Commit 5:
+Validation results:
 
-- modern-era matches: 25,157;
-- team-perspective rows: 50,314;
-- same-day team/date groups handled: 7;
-- final modelling rows: 25,157;
-- unique modelling match IDs: 25,157;
-- duplicate modelling match IDs: 0;
+- modern-era matches: 25,157
+- team-perspective rows: 50,314
+- same-day team/date groups handled: 7
+- final modelling rows: 25,157
+- unique modelling match IDs: 25,157
+- duplicate modelling match IDs: 0
 - rows added or lost by the form merge: 0.
-
-The rolling-form logic is unchanged by Commit 5.

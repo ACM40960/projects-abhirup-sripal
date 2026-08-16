@@ -1,0 +1,26 @@
+{
+  "selected_model_name": "Calibrated Linear SVM",
+  "feature_columns": [
+    "home_elo",
+    "away_elo",
+    "home_form_goals_for",
+    "home_form_goals_against",
+    "away_form_goals_for",
+    "away_form_goals_against",
+    "match_weight",
+    "is_neutral"
+  ],
+  "class_labels": [
+    0,
+    1,
+    2
+  ],
+  "training_cutoff": "2023-01-01",
+  "training_end": "2022-12-30",
+  "holdout_start": "2023-01-02",
+  "holdout_end": "2026-03-31",
+  "state_data_end": "2026-03-31",
+  "training_rows": 21712,
+  "test_rows": 3445,
+  "scikit_learn_version": "1.8.0"
+}

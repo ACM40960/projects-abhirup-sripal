@@ -1,15 +1,8 @@
 metric,value
-validated_completed_matches,49215
-modern_model_matches,25157
 training_matches,21712
 test_matches,3445
-test_draws,795
-test_draw_rate,0.23076923076923078
+historical_holdout_end,2026-03-31
 selected_probability_model,Calibrated Linear SVM
-selected_log_loss,0.8917168443227387
-selected_multiclass_brier,0.5249155607356902
-selected_argmax_draw_recall,0.011320754716981131
-selected_mean_draw_probability,0.22447580554907726
 team_state_count,318
 tournament_demo_teams,48
 simulation_iterations,2000

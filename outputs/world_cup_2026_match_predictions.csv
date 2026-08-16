@@ -1,105 +1,105 @@
 match_id,match_number,date,stage,group,team_a,team_b,neutral,final_score_a,final_score_b,decided_by,advanced_team,actual_outcome,actual_label,p_team_a_win,p_draw,p_team_b_win,predicted_outcome,predicted_label,correct_argmax
-m01,1,2026-06-11,group,A,Mexico,South Africa,False,2,0,regulation,,team_a_win,2,0.7376359376439653,0.1811793782272404,0.0811846841287944,team_a_win,2,1
-m02,2,2026-06-11,group,A,South Korea,Czech Republic,True,2,1,regulation,,team_a_win,2,0.6198092910954971,0.20202237953496954,0.1781683293695333,team_a_win,2,1
-m03,3,2026-06-12,group,D,United States,Paraguay,False,4,1,regulation,,team_a_win,2,0.6698039958023715,0.16957956759275844,0.1606164366048701,team_a_win,2,1
-m04,4,2026-06-12,group,B,Canada,Bosnia and Herzegovina,False,1,1,regulation,,draw,1,0.7582632258373315,0.16568067190799676,0.07605610225467177,team_a_win,2,0
-m05,5,2026-06-13,group,B,Qatar,Switzerland,True,1,1,regulation,,draw,1,0.19770916172798633,0.19348710308031458,0.6088037351916991,team_b_win,0,0
-m06,6,2026-06-13,group,C,Brazil,Morocco,True,1,1,regulation,,draw,1,0.35060590089366617,0.25265922217921544,0.3967348769271184,team_b_win,0,0
-m07,7,2026-06-13,group,C,Haiti,Scotland,True,0,1,regulation,,team_b_win,0,0.3777195656347725,0.19024198184884156,0.43203845251638595,team_b_win,0,1
-m08,8,2026-06-13,group,D,Australia,Turkey,True,2,0,regulation,,team_a_win,2,0.43098826745881336,0.22516146254616465,0.343850269995022,team_a_win,2,1
-m09,9,2026-06-14,group,E,Germany,Curaçao,True,7,1,regulation,,team_a_win,2,0.77169898532257,0.17721051242336186,0.05109050225406814,team_a_win,2,1
-m10,10,2026-06-14,group,F,Netherlands,Japan,True,2,2,regulation,,draw,1,0.35618699440290447,0.2606893934257085,0.383123612171387,team_b_win,0,0
-m11,11,2026-06-14,group,E,Ivory Coast,Ecuador,True,1,0,regulation,,team_a_win,2,0.3491020585601956,0.22429204245492404,0.4266058989848803,team_b_win,0,0
-m12,12,2026-06-14,group,F,Sweden,Tunisia,True,5,1,regulation,,team_a_win,2,0.29056100271738894,0.19517555043879814,0.514263446843813,team_b_win,0,0
-m13,13,2026-06-15,group,H,Spain,Cape Verde,True,0,0,regulation,,draw,1,0.7741533738406222,0.19621699442898663,0.02962963173039121,team_a_win,2,0
-m14,14,2026-06-15,group,G,Iran,New Zealand,True,2,2,regulation,,draw,1,0.6965199972540649,0.19796824453005668,0.10551175821587845,team_a_win,2,0
-m15,15,2026-06-15,group,H,Saudi Arabia,Uruguay,True,1,1,regulation,,draw,1,0.20901700932474254,0.19704262710539105,0.5939403635698663,team_b_win,0,0
-m16,16,2026-06-15,group,G,Belgium,Egypt,True,1,1,regulation,,draw,1,0.49637185755014296,0.2228129578277102,0.2808151846221468,team_a_win,2,0
-m17,17,2026-06-16,group,J,Austria,Jordan,True,3,1,regulation,,team_a_win,2,0.45654029149081576,0.20717404713130785,0.33628566137787635,team_a_win,2,1
-m18,18,2026-06-16,group,I,France,Senegal,True,3,1,regulation,,team_a_win,2,0.5791818765789243,0.23896349328188504,0.1818546301391907,team_a_win,2,1
-m19,19,2026-06-16,group,I,Iraq,Norway,True,1,4,regulation,,team_b_win,0,0.4035282554044925,0.2111774072989945,0.38529433729651297,team_a_win,2,0
-m20,20,2026-06-16,group,J,Argentina,Algeria,True,3,0,regulation,,team_a_win,2,0.6361451043496377,0.23862687459204013,0.12522802105832223,team_a_win,2,1
-m21,21,2026-06-17,group,K,Portugal,DR Congo,True,1,1,regulation,,draw,1,0.65925414624599,0.2122676442475701,0.1284782095064399,team_a_win,2,0
-m22,22,2026-06-17,group,L,England,Croatia,True,4,2,regulation,,team_a_win,2,0.5493809971311506,0.2361587204720641,0.21446028239678525,team_a_win,2,1
-m23,23,2026-06-17,group,L,Ghana,Panama,True,1,0,regulation,,team_a_win,2,0.19085535192322384,0.18563141567734692,0.6235132323994292,team_b_win,0,0
-m24,24,2026-06-17,group,K,Uzbekistan,Colombia,True,1,3,regulation,,team_b_win,0,0.3163194997962872,0.23376787592610046,0.44991262427761236,team_b_win,0,1
-m25,25,2026-06-18,group,A,Mexico,South Korea,False,1,0,regulation,,team_a_win,2,0.503077613829394,0.2600325243384898,0.23688986183211633,team_a_win,2,1
-m26,26,2026-06-18,group,B,Canada,Qatar,False,6,0,regulation,,team_a_win,2,0.6889596296600183,0.1906796874153463,0.12036068292463531,team_a_win,2,1
-m27,27,2026-06-18,group,B,Switzerland,Bosnia and Herzegovina,True,4,1,regulation,,team_a_win,2,0.6829260153174741,0.18333149015470823,0.13374249452781767,team_a_win,2,1
-m28,28,2026-06-18,group,A,Czech Republic,South Africa,True,1,1,regulation,,draw,1,0.4305612350569833,0.1868996146460047,0.3825391502970121,team_a_win,2,0
-m29,29,2026-06-19,group,D,United States,Australia,False,2,0,regulation,,team_a_win,2,0.4239703630156315,0.221592376078876,0.35443726090549255,team_a_win,2,1
-m30,30,2026-06-19,group,D,Turkey,Paraguay,True,0,1,regulation,,team_b_win,0,0.5734850120913458,0.20410439471773842,0.22241059319091583,team_a_win,2,0
-m31,31,2026-06-19,group,C,Brazil,Haiti,True,3,0,regulation,,team_a_win,2,0.7051352193290643,0.19674002819579017,0.09812475247514557,team_a_win,2,1
-m32,32,2026-06-19,group,C,Scotland,Morocco,True,0,1,regulation,,team_b_win,0,0.09732066215513542,0.2003498373334642,0.7023295005114004,team_b_win,0,1
-m33,33,2026-06-20,group,F,Tunisia,Japan,True,0,4,regulation,,team_b_win,0,0.14199189850738325,0.2227393006202235,0.6352688008723932,team_b_win,0,1
-m34,34,2026-06-20,group,E,Ecuador,Curaçao,True,0,0,regulation,,draw,1,0.7086991853606861,0.18123818379263118,0.11006263084668275,team_a_win,2,0
-m35,35,2026-06-20,group,E,Germany,Ivory Coast,True,2,1,regulation,,team_a_win,2,0.5982070259311882,0.21695336970900292,0.18483960435980878,team_a_win,2,1
-m36,36,2026-06-20,group,F,Netherlands,Sweden,True,5,1,regulation,,team_a_win,2,0.7036917285960624,0.19494622476736168,0.10136204663657591,team_a_win,2,1
-m37,37,2026-06-21,group,G,New Zealand,Egypt,True,1,3,regulation,,team_b_win,0,0.19166730706158952,0.1976127481307044,0.6107199448077061,team_b_win,0,1
-m38,38,2026-06-21,group,H,Uruguay,Cape Verde,True,2,2,regulation,,draw,1,0.6554262379274642,0.19021099463228142,0.1543627674402544,team_a_win,2,0
-m39,39,2026-06-21,group,G,Belgium,Iran,True,0,0,regulation,,draw,1,0.34229246532910357,0.2379859319936523,0.4197216026772442,team_b_win,0,0
-m40,40,2026-06-21,group,H,Spain,Saudi Arabia,True,4,0,regulation,,team_a_win,2,0.7587483910893699,0.1996475279051972,0.041604081005433016,team_a_win,2,1
-m41,41,2026-06-22,group,J,Jordan,Algeria,True,1,2,regulation,,team_b_win,0,0.20853862930806222,0.20847957865005304,0.5829817920418848,team_b_win,0,1
-m42,42,2026-06-22,group,I,Norway,Senegal,True,3,2,regulation,,team_a_win,2,0.2207898181021105,0.21786475526214505,0.5613454266357445,team_b_win,0,0
-m43,43,2026-06-22,group,I,France,Iraq,True,3,0,regulation,,team_a_win,2,0.6929761729250115,0.21173182746662803,0.09529199960836049,team_a_win,2,1
-m44,44,2026-06-22,group,J,Argentina,Austria,True,2,0,regulation,,team_a_win,2,0.7093843386427224,0.21900836499482368,0.07160729636245379,team_a_win,2,1
-m45,45,2026-06-23,group,K,Colombia,DR Congo,True,1,0,regulation,,team_a_win,2,0.5930633868745261,0.21594544506400293,0.1909911680614711,team_a_win,2,1
-m46,46,2026-06-23,group,L,Panama,Croatia,True,0,1,regulation,,team_b_win,0,0.26296762078384006,0.21522805919962648,0.5218043200165334,team_b_win,0,1
-m47,47,2026-06-23,group,L,England,Ghana,True,0,0,regulation,,draw,1,0.7586519001590462,0.18869550543546787,0.052652594405486135,team_a_win,2,0
-m48,48,2026-06-23,group,K,Portugal,Uzbekistan,True,5,0,regulation,,team_a_win,2,0.5425244112347862,0.23244323067321204,0.22503235809200173,team_a_win,2,1
-m49,49,2026-06-24,group,A,South Africa,South Korea,True,1,0,regulation,,team_a_win,2,0.16389334708556785,0.199369214155877,0.6367374387585552,team_b_win,0,0
-m50,50,2026-06-24,group,A,Mexico,Czech Republic,False,3,0,regulation,,team_a_win,2,0.7239600866260628,0.18647652415384955,0.08956338922008768,team_a_win,2,1
+m01,1,2026-06-11,group,A,Mexico,South Africa,False,2,0,regulation,,team_a_win,2,0.7376359376439653,0.18117937822724042,0.08118468412879427,team_a_win,2,1
+m02,2,2026-06-11,group,A,South Korea,Czech Republic,True,2,1,regulation,,team_a_win,2,0.6198092910954971,0.2020223795349696,0.17816832936953328,team_a_win,2,1
+m03,3,2026-06-12,group,D,United States,Paraguay,False,4,1,regulation,,team_a_win,2,0.6698039958023714,0.16957956759275852,0.16061643660487013,team_a_win,2,1
+m04,4,2026-06-12,group,B,Canada,Bosnia and Herzegovina,False,1,1,regulation,,draw,1,0.7582632258373315,0.1656806719079968,0.07605610225467177,team_a_win,2,0
+m05,5,2026-06-13,group,B,Qatar,Switzerland,True,1,1,regulation,,draw,1,0.1977091617279863,0.19348710308031464,0.6088037351916991,team_b_win,0,0
+m06,6,2026-06-13,group,C,Brazil,Morocco,True,1,1,regulation,,draw,1,0.3506059008936661,0.25265922217921555,0.3967348769271184,team_b_win,0,0
+m07,7,2026-06-13,group,C,Haiti,Scotland,True,0,1,regulation,,team_b_win,0,0.3777195656347725,0.1902419818488416,0.43203845251638595,team_b_win,0,1
+m08,8,2026-06-13,group,D,Australia,Turkey,True,2,0,regulation,,team_a_win,2,0.43098826745881336,0.22516146254616473,0.34385026999502194,team_a_win,2,1
+m09,9,2026-06-14,group,E,Germany,Curaçao,True,7,1,regulation,,team_a_win,2,0.7716989853225701,0.17721051242336186,0.05109050225406813,team_a_win,2,1
+m10,10,2026-06-14,group,F,Netherlands,Japan,True,2,2,regulation,,draw,1,0.3561869944029041,0.2606893934257086,0.38312361217138724,team_b_win,0,0
+m11,11,2026-06-14,group,E,Ivory Coast,Ecuador,True,1,0,regulation,,team_a_win,2,0.34910205856019555,0.22429204245492412,0.4266058989848803,team_b_win,0,0
+m12,12,2026-06-14,group,F,Sweden,Tunisia,True,5,1,regulation,,team_a_win,2,0.2905610027173889,0.1951755504387982,0.514263446843813,team_b_win,0,0
+m13,13,2026-06-15,group,H,Spain,Cape Verde,True,0,0,regulation,,draw,1,0.7741533738406222,0.19621699442898674,0.029629631730391102,team_a_win,2,0
+m14,14,2026-06-15,group,G,Iran,New Zealand,True,2,2,regulation,,draw,1,0.6965199972540649,0.19796824453005674,0.10551175821587845,team_a_win,2,0
+m15,15,2026-06-15,group,H,Saudi Arabia,Uruguay,True,1,1,regulation,,draw,1,0.20901700932474251,0.19704262710539117,0.5939403635698663,team_b_win,0,0
+m16,16,2026-06-15,group,G,Belgium,Egypt,True,1,1,regulation,,draw,1,0.4963718575501425,0.22281295782771027,0.28081518462214716,team_a_win,2,0
+m17,17,2026-06-16,group,J,Austria,Jordan,True,3,1,regulation,,team_a_win,2,0.45654029149081615,0.20717404713130788,0.33628566137787597,team_a_win,2,1
+m18,18,2026-06-16,group,I,France,Senegal,True,3,1,regulation,,team_a_win,2,0.5791818765789243,0.23896349328188513,0.18185463013919068,team_a_win,2,1
+m19,19,2026-06-16,group,I,Iraq,Norway,True,1,4,regulation,,team_b_win,0,0.40352825540449255,0.21117740729899456,0.38529433729651286,team_a_win,2,0
+m20,20,2026-06-16,group,J,Argentina,Algeria,True,3,0,regulation,,team_a_win,2,0.6361451043496376,0.23862687459204024,0.12522802105832215,team_a_win,2,1
+m21,21,2026-06-17,group,K,Portugal,DR Congo,True,1,1,regulation,,draw,1,0.65925414624599,0.21226764424757016,0.1284782095064399,team_a_win,2,0
+m22,22,2026-06-17,group,L,England,Croatia,True,4,2,regulation,,team_a_win,2,0.5493809971311513,0.23615872047206413,0.2144602823967846,team_a_win,2,1
+m23,23,2026-06-17,group,L,Ghana,Panama,True,1,0,regulation,,team_a_win,2,0.19085535192322411,0.18563141567734695,0.6235132323994289,team_b_win,0,0
+m24,24,2026-06-17,group,K,Uzbekistan,Colombia,True,1,3,regulation,,team_b_win,0,0.31631949979628715,0.23376787592610054,0.44991262427761236,team_b_win,0,1
+m25,25,2026-06-18,group,A,Mexico,South Korea,False,1,0,regulation,,team_a_win,2,0.5030776138293942,0.26003252433848983,0.23688986183211605,team_a_win,2,1
+m26,26,2026-06-18,group,B,Canada,Qatar,False,6,0,regulation,,team_a_win,2,0.6889596296600183,0.19067968741534638,0.12036068292463531,team_a_win,2,1
+m27,27,2026-06-18,group,B,Switzerland,Bosnia and Herzegovina,True,4,1,regulation,,team_a_win,2,0.6829260153174741,0.1833314901547083,0.13374249452781764,team_a_win,2,1
+m28,28,2026-06-18,group,A,Czech Republic,South Africa,True,1,1,regulation,,draw,1,0.43056123505698324,0.18689961464600474,0.38253915029701213,team_a_win,2,0
+m29,29,2026-06-19,group,D,United States,Australia,False,2,0,regulation,,team_a_win,2,0.4239703630156314,0.22159237607887608,0.3544372609054926,team_a_win,2,1
+m30,30,2026-06-19,group,D,Turkey,Paraguay,True,0,1,regulation,,team_b_win,0,0.5734850120913458,0.20410439471773845,0.22241059319091583,team_a_win,2,0
+m31,31,2026-06-19,group,C,Brazil,Haiti,True,3,0,regulation,,team_a_win,2,0.7051352193290642,0.19674002819579017,0.09812475247514552,team_a_win,2,1
+m32,32,2026-06-19,group,C,Scotland,Morocco,True,0,1,regulation,,team_b_win,0,0.09732066215513539,0.20034983733346423,0.7023295005114003,team_b_win,0,1
+m33,33,2026-06-20,group,F,Tunisia,Japan,True,0,4,regulation,,team_b_win,0,0.14199189850738303,0.22273930062022357,0.6352688008723935,team_b_win,0,1
+m34,34,2026-06-20,group,E,Ecuador,Curaçao,True,0,0,regulation,,draw,1,0.7086991853606861,0.1812381837926312,0.11006263084668273,team_a_win,2,0
+m35,35,2026-06-20,group,E,Germany,Ivory Coast,True,2,1,regulation,,team_a_win,2,0.5982070259311882,0.21695336970900297,0.18483960435980878,team_a_win,2,1
+m36,36,2026-06-20,group,F,Netherlands,Sweden,True,5,1,regulation,,team_a_win,2,0.7036917285960624,0.19494622476736168,0.10136204663657586,team_a_win,2,1
+m37,37,2026-06-21,group,G,New Zealand,Egypt,True,1,3,regulation,,team_b_win,0,0.19166730706158946,0.19761274813070442,0.6107199448077061,team_b_win,0,1
+m38,38,2026-06-21,group,H,Uruguay,Cape Verde,True,2,2,regulation,,draw,1,0.6554262379274641,0.19021099463228153,0.1543627674402544,team_a_win,2,0
+m39,39,2026-06-21,group,G,Belgium,Iran,True,0,0,regulation,,draw,1,0.3422924653291031,0.23798593199365237,0.41972160267724457,team_b_win,0,0
+m40,40,2026-06-21,group,H,Spain,Saudi Arabia,True,4,0,regulation,,team_a_win,2,0.75874839108937,0.19964752790519724,0.041604081005432864,team_a_win,2,1
+m41,41,2026-06-22,group,J,Jordan,Algeria,True,1,2,regulation,,team_b_win,0,0.20853862930806188,0.208479578650053,0.582981792041885,team_b_win,0,1
+m42,42,2026-06-22,group,I,Norway,Senegal,True,3,2,regulation,,team_a_win,2,0.22078981810211046,0.2178647552621451,0.5613454266357444,team_b_win,0,0
+m43,43,2026-06-22,group,I,France,Iraq,True,3,0,regulation,,team_a_win,2,0.6929761729250115,0.21173182746662805,0.09529199960836049,team_a_win,2,1
+m44,44,2026-06-22,group,J,Argentina,Austria,True,2,0,regulation,,team_a_win,2,0.7093843386427224,0.2190083649948238,0.07160729636245378,team_a_win,2,1
+m45,45,2026-06-23,group,K,Colombia,DR Congo,True,1,0,regulation,,team_a_win,2,0.5930633868745259,0.21594544506400298,0.19099116806147104,team_a_win,2,1
+m46,46,2026-06-23,group,L,Panama,Croatia,True,0,1,regulation,,team_b_win,0,0.26296762078383973,0.2152280591996265,0.5218043200165339,team_b_win,0,1
+m47,47,2026-06-23,group,L,England,Ghana,True,0,0,regulation,,draw,1,0.7586519001590462,0.18869550543546787,0.052652594405485934,team_a_win,2,0
+m48,48,2026-06-23,group,K,Portugal,Uzbekistan,True,5,0,regulation,,team_a_win,2,0.5425244112347862,0.23244323067321213,0.22503235809200173,team_a_win,2,1
+m49,49,2026-06-24,group,A,South Africa,South Korea,True,1,0,regulation,,team_a_win,2,0.16389334708556785,0.19936921415587705,0.6367374387585552,team_b_win,0,0
+m50,50,2026-06-24,group,A,Mexico,Czech Republic,False,3,0,regulation,,team_a_win,2,0.7239600866260629,0.18647652415384955,0.08956338922008752,team_a_win,2,1
 m51,51,2026-06-24,group,C,Morocco,Haiti,True,4,2,regulation,,team_a_win,2,0.7087104519849292,0.20551683439276996,0.0857727136223008,team_a_win,2,1
-m52,52,2026-06-24,group,C,Scotland,Brazil,True,0,3,regulation,,team_b_win,0,0.11101945998077477,0.19145914726795296,0.6975213927512723,team_b_win,0,1
-m53,53,2026-06-24,group,B,Bosnia and Herzegovina,Qatar,True,3,1,regulation,,team_a_win,2,0.3043772237535056,0.17863941525272042,0.516983360993774,team_b_win,0,0
-m54,54,2026-06-24,group,B,Canada,Switzerland,False,1,2,regulation,,team_b_win,0,0.4672722894708697,0.2517957637582664,0.28093194677086397,team_a_win,2,0
-m55,55,2026-06-25,group,E,Curaçao,Ivory Coast,True,0,2,regulation,,team_b_win,0,0.13193700190337296,0.1732350533353379,0.6948279447612892,team_b_win,0,1
-m56,56,2026-06-25,group,E,Ecuador,Germany,True,2,1,regulation,,team_a_win,2,0.2077292428978885,0.23313870684740445,0.559132050254707,team_b_win,0,0
-m57,57,2026-06-25,group,F,Japan,Sweden,True,1,1,regulation,,draw,1,0.7074835839701366,0.1977647490507716,0.09475166697909182,team_a_win,2,0
-m58,58,2026-06-25,group,F,Tunisia,Netherlands,True,1,3,regulation,,team_b_win,0,0.15142245048859526,0.21964587621303358,0.6289316732983712,team_b_win,0,1
-m59,59,2026-06-25,group,D,United States,Turkey,False,2,3,regulation,,team_b_win,0,0.4773761495381616,0.21401117425503347,0.30861267620680494,team_a_win,2,0
-m60,60,2026-06-25,group,D,Paraguay,Australia,True,0,0,regulation,,draw,1,0.19209310335210578,0.1986010411702839,0.6093058554776103,team_b_win,0,0
-m61,61,2026-06-26,group,G,New Zealand,Belgium,True,1,5,regulation,,team_b_win,0,0.12913921707234005,0.1852963413440045,0.6855644415836555,team_b_win,0,1
-m62,62,2026-06-26,group,G,Egypt,Iran,True,1,1,regulation,,draw,1,0.23819058280480365,0.24020192745180696,0.5216074897433893,team_b_win,0,0
-m63,63,2026-06-26,group,H,Cape Verde,Saudi Arabia,True,0,0,regulation,,draw,1,0.32479200101875394,0.1835481806672967,0.49165981831394945,team_b_win,0,0
-m64,64,2026-06-26,group,H,Uruguay,Spain,True,0,1,regulation,,team_b_win,0,0.09328997284544799,0.2261353708467379,0.6805746563078141,team_b_win,0,1
-m65,65,2026-06-26,group,I,Senegal,Iraq,True,5,0,regulation,,team_a_win,2,0.551227886834776,0.22227460874627555,0.22649750441894856,team_a_win,2,1
-m66,66,2026-06-26,group,I,Norway,France,True,1,4,regulation,,team_b_win,0,0.09253347340103217,0.20792007525910916,0.6995464513398587,team_b_win,0,1
-m67,67,2026-06-27,group,J,Algeria,Austria,True,3,3,regulation,,draw,1,0.5247556546186162,0.22421736716769225,0.25102697821369163,team_a_win,2,0
-m68,68,2026-06-27,group,J,Jordan,Argentina,True,1,3,regulation,,team_b_win,0,0.05797344799787551,0.20576214745465404,0.7362644045474704,team_b_win,0,1
-m69,69,2026-06-27,group,K,Colombia,Portugal,True,0,0,regulation,,draw,1,0.28362786785658,0.2352354398095017,0.4811366923339183,team_b_win,0,0
-m70,70,2026-06-27,group,K,DR Congo,Uzbekistan,True,3,1,regulation,,team_a_win,2,0.24146913101261724,0.22232532698032167,0.536205542007061,team_b_win,0,0
-m71,71,2026-06-27,group,L,Croatia,Ghana,True,2,1,regulation,,team_a_win,2,0.7055832253354596,0.1783319605855396,0.11608481407900084,team_a_win,2,1
-m72,72,2026-06-27,group,L,Panama,England,True,0,2,regulation,,team_b_win,0,0.1286150854515487,0.2248299005425715,0.6465550140058799,team_b_win,0,1
+m52,52,2026-06-24,group,C,Scotland,Brazil,True,0,3,regulation,,team_b_win,0,0.11101945998077475,0.191459147267953,0.6975213927512722,team_b_win,0,1
+m53,53,2026-06-24,group,B,Bosnia and Herzegovina,Qatar,True,3,1,regulation,,team_a_win,2,0.30437722375350557,0.17863941525272045,0.5169833609937741,team_b_win,0,0
+m54,54,2026-06-24,group,B,Canada,Switzerland,False,1,2,regulation,,team_b_win,0,0.4672722894708697,0.25179576375826646,0.28093194677086397,team_a_win,2,0
+m55,55,2026-06-25,group,E,Curaçao,Ivory Coast,True,0,2,regulation,,team_b_win,0,0.13193700190337293,0.1732350533353379,0.6948279447612892,team_b_win,0,1
+m56,56,2026-06-25,group,E,Ecuador,Germany,True,2,1,regulation,,team_a_win,2,0.2077292428978885,0.2331387068474045,0.559132050254707,team_b_win,0,0
+m57,57,2026-06-25,group,F,Japan,Sweden,True,1,1,regulation,,draw,1,0.7074835839701368,0.19776474905077163,0.09475166697909164,team_a_win,2,0
+m58,58,2026-06-25,group,F,Tunisia,Netherlands,True,1,3,regulation,,team_b_win,0,0.15142245048859523,0.21964587621303364,0.6289316732983712,team_b_win,0,1
+m59,59,2026-06-25,group,D,United States,Turkey,False,2,3,regulation,,team_b_win,0,0.4773761495381616,0.21401117425503352,0.3086126762068049,team_a_win,2,0
+m60,60,2026-06-25,group,D,Paraguay,Australia,True,0,0,regulation,,draw,1,0.19209310335210578,0.198601041170284,0.6093058554776103,team_b_win,0,0
+m61,61,2026-06-26,group,G,New Zealand,Belgium,True,1,5,regulation,,team_b_win,0,0.1291392170723403,0.18529634134400455,0.6855644415836551,team_b_win,0,1
+m62,62,2026-06-26,group,G,Egypt,Iran,True,1,1,regulation,,draw,1,0.2381905828048036,0.24020192745180707,0.5216074897433893,team_b_win,0,0
+m63,63,2026-06-26,group,H,Cape Verde,Saudi Arabia,True,0,0,regulation,,draw,1,0.32479200101875383,0.18354818066729672,0.4916598183139494,team_b_win,0,0
+m64,64,2026-06-26,group,H,Uruguay,Spain,True,0,1,regulation,,team_b_win,0,0.09328997284544767,0.22613537084673796,0.6805746563078144,team_b_win,0,1
+m65,65,2026-06-26,group,I,Senegal,Iraq,True,5,0,regulation,,team_a_win,2,0.551227886834776,0.2222746087462756,0.22649750441894856,team_a_win,2,1
+m66,66,2026-06-26,group,I,Norway,France,True,1,4,regulation,,team_b_win,0,0.09253347340103217,0.2079200752591092,0.6995464513398587,team_b_win,0,1
+m67,67,2026-06-27,group,J,Algeria,Austria,True,3,3,regulation,,draw,1,0.5247556546186162,0.22421736716769228,0.25102697821369163,team_a_win,2,0
+m68,68,2026-06-27,group,J,Jordan,Argentina,True,1,3,regulation,,team_b_win,0,0.05797344799787541,0.20576214745465407,0.7362644045474706,team_b_win,0,1
+m69,69,2026-06-27,group,K,Colombia,Portugal,True,0,0,regulation,,draw,1,0.28362786785658,0.2352354398095018,0.4811366923339182,team_b_win,0,0
+m70,70,2026-06-27,group,K,DR Congo,Uzbekistan,True,3,1,regulation,,team_a_win,2,0.24146913101261724,0.2223253269803217,0.536205542007061,team_b_win,0,0
+m71,71,2026-06-27,group,L,Croatia,Ghana,True,2,1,regulation,,team_a_win,2,0.7055832253354596,0.17833196058553966,0.11608481407900083,team_a_win,2,1
+m72,72,2026-06-27,group,L,Panama,England,True,0,2,regulation,,team_b_win,0,0.12861508545154804,0.2248299005425714,0.6465550140058806,team_b_win,0,1
 m73,73,2026-06-28,round_of_32,,South Africa,Canada,True,0,1,regulation,Canada,team_b_win,0,0.2347811755921522,0.20598159411598804,0.5592372302918598,team_b_win,0,1
-m74,74,2026-06-29,round_of_32,,Germany,Paraguay,True,1,1,penalties,Paraguay,draw,1,0.6991655482935188,0.1979702850025439,0.10286416670393729,team_a_win,2,0
-m75,75,2026-06-29,round_of_32,,Netherlands,Morocco,True,1,1,penalties,Morocco,draw,1,0.3686922615995544,0.2614933191762676,0.36981441922417807,team_b_win,0,0
-m76,76,2026-06-29,round_of_32,,Brazil,Japan,True,2,1,regulation,Brazil,team_a_win,2,0.3382582887396829,0.25170220071815785,0.41003951054215926,team_b_win,0,0
-m77,77,2026-06-30,round_of_32,,Mexico,Ecuador,False,2,0,regulation,Mexico,team_a_win,2,0.5709506660317799,0.24273918958915752,0.18631014437906257,team_a_win,2,1
-m78,78,2026-06-30,round_of_32,,France,Sweden,True,3,0,regulation,France,team_a_win,2,0.7464733202379369,0.19092021839396955,0.06260646136809357,team_a_win,2,1
-m79,79,2026-06-30,round_of_32,,Ivory Coast,Norway,True,1,2,regulation,Norway,team_b_win,0,0.45475561697282196,0.2083966700304652,0.3368477129967129,team_a_win,2,0
-m80,80,2026-07-01,round_of_32,,United States,Bosnia and Herzegovina,False,2,0,regulation,United States,team_a_win,2,0.7725311181435661,0.1393782957252206,0.08809058613121337,team_a_win,2,1
-m81,81,2026-07-01,round_of_32,,Belgium,Senegal,True,3,2,regulation,Belgium,team_a_win,2,0.39787834606474604,0.2306387271831335,0.37148292675212047,team_a_win,2,1
-m82,82,2026-07-01,round_of_32,,England,DR Congo,True,2,1,regulation,England,team_a_win,2,0.6850714844595495,0.21846724613830729,0.09646126940214325,team_a_win,2,1
-m83,83,2026-07-02,round_of_32,,Switzerland,Algeria,True,2,0,regulation,Switzerland,team_a_win,2,0.313588538581079,0.2267448624891098,0.45966659892981127,team_b_win,0,0
-m84,84,2026-07-02,round_of_32,,Portugal,Croatia,True,2,1,regulation,Portugal,team_a_win,2,0.5004253007206675,0.22697928629965985,0.2725954129796726,team_a_win,2,1
-m85,85,2026-07-02,round_of_32,,Spain,Austria,True,3,0,regulation,Spain,team_a_win,2,0.71533958863127,0.21878331296806464,0.06587709840066533,team_a_win,2,1
-m86,86,2026-07-03,round_of_32,,Colombia,Ghana,True,1,0,regulation,Colombia,team_a_win,2,0.7100091634750187,0.18282766166093728,0.107163174864044,team_a_win,2,1
-m87,87,2026-07-03,round_of_32,,Argentina,Cape Verde,True,3,2,regulation,Argentina,team_a_win,2,0.7720665567365879,0.19572302457121094,0.0322104186922013,team_a_win,2,1
-m88,88,2026-07-03,round_of_32,,Australia,Egypt,True,1,1,penalties,Egypt,draw,1,0.4328137848024283,0.2273752254719715,0.33981098972560025,team_a_win,2,0
-m89,89,2026-07-04,round_of_16,,Paraguay,France,True,0,1,regulation,France,team_b_win,0,0.06331010760489181,0.1968419227224617,0.7398479696726465,team_b_win,0,1
-m90,90,2026-07-04,round_of_16,,Canada,Morocco,True,0,3,regulation,Morocco,team_b_win,0,0.1777509824131024,0.239977073121686,0.5822719444652116,team_b_win,0,1
-m91,91,2026-07-05,round_of_16,,Mexico,England,False,2,3,regulation,England,team_b_win,0,0.30238435634630334,0.29904246412054286,0.39857317953315385,team_b_win,0,1
-m92,92,2026-07-05,round_of_16,,Brazil,Norway,True,1,2,regulation,Norway,team_b_win,0,0.6247390858259476,0.20969247629568044,0.16556843787837192,team_a_win,2,0
-m93,93,2026-07-06,round_of_16,,United States,Belgium,False,1,4,regulation,Belgium,team_b_win,0,0.3506072772442303,0.22976506708158523,0.4196276556741846,team_b_win,0,1
-m94,94,2026-07-06,round_of_16,,Portugal,Spain,True,0,1,regulation,Spain,team_b_win,0,0.1823511280721891,0.25316027961992943,0.5644885923078815,team_b_win,0,1
-m95,95,2026-07-07,round_of_16,,Switzerland,Colombia,True,0,0,penalties,Switzerland,draw,1,0.30101414385768466,0.223903794748468,0.47508206139384734,team_b_win,0,0
-m96,96,2026-07-07,round_of_16,,Argentina,Egypt,True,3,2,regulation,Argentina,team_a_win,2,0.6773243360709712,0.22956755544295046,0.09310810848607841,team_a_win,2,1
-m97,97,2026-07-09,quarter_final,,France,Morocco,True,2,0,regulation,France,team_a_win,2,0.48268097014663874,0.25925268740949653,0.25806634244386467,team_a_win,2,1
-m98,98,2026-07-10,quarter_final,,Spain,Belgium,True,2,1,regulation,Spain,team_a_win,2,0.6304424227529357,0.233238280313301,0.13631929693376327,team_a_win,2,1
-m99,99,2026-07-11,quarter_final,,Argentina,Switzerland,True,3,1,regulation,Argentina,team_a_win,2,0.68133432221832,0.2233779888741674,0.09528768890751263,team_a_win,2,1
-m100,100,2026-07-11,quarter_final,,Norway,England,True,1,2,regulation,England,team_b_win,0,0.11843103504421643,0.217110509216479,0.6644584557393045,team_b_win,0,1
-m101,101,2026-07-14,semi_final,,France,Spain,True,0,2,regulation,Spain,team_b_win,0,0.28206245491526005,0.27278466206771634,0.4451528830170236,team_b_win,0,1
-m102,102,2026-07-15,semi_final,,England,Argentina,True,1,2,regulation,Argentina,team_b_win,0,0.23976178532666345,0.2733184532983193,0.48691976137501725,team_b_win,0,1
-m103,103,2026-07-18,third_place,,France,England,True,4,6,regulation,England,team_b_win,0,0.4310666038680731,0.26467084711411293,0.30426254901781397,team_a_win,2,0
-m104,104,2026-07-19,final,,Spain,Argentina,True,1,0,extra_time,Spain,team_a_win,2,0.37468053949985625,0.2881774620111246,0.33714199848901916,team_a_win,2,1
+m74,74,2026-06-29,round_of_32,,Germany,Paraguay,True,1,1,penalties,Paraguay,draw,1,0.6991655482935188,0.19797028500254396,0.1028641667039373,team_a_win,2,0
+m75,75,2026-06-29,round_of_32,,Netherlands,Morocco,True,1,1,penalties,Morocco,draw,1,0.36869226159955437,0.26149331917626767,0.36981441922417807,team_b_win,0,0
+m76,76,2026-06-29,round_of_32,,Brazil,Japan,True,2,1,regulation,Brazil,team_a_win,2,0.3382582887396824,0.25170220071815796,0.4100395105421597,team_b_win,0,0
+m77,77,2026-06-30,round_of_32,,Mexico,Ecuador,False,2,0,regulation,Mexico,team_a_win,2,0.5709506660317802,0.24273918958915752,0.1863101443790623,team_a_win,2,1
+m78,78,2026-06-30,round_of_32,,France,Sweden,True,3,0,regulation,France,team_a_win,2,0.7464733202379369,0.19092021839396964,0.06260646136809359,team_a_win,2,1
+m79,79,2026-06-30,round_of_32,,Ivory Coast,Norway,True,1,2,regulation,Norway,team_b_win,0,0.45475561697282185,0.20839667003046522,0.3368477129967129,team_a_win,2,0
+m80,80,2026-07-01,round_of_32,,United States,Bosnia and Herzegovina,False,2,0,regulation,United States,team_a_win,2,0.772531118143566,0.1393782957252206,0.08809058613121336,team_a_win,2,1
+m81,81,2026-07-01,round_of_32,,Belgium,Senegal,True,3,2,regulation,Belgium,team_a_win,2,0.39787834606474565,0.23063872718313352,0.3714829267521209,team_a_win,2,1
+m82,82,2026-07-01,round_of_32,,England,DR Congo,True,2,1,regulation,England,team_a_win,2,0.6850714844595498,0.2184672461383073,0.09646126940214292,team_a_win,2,1
+m83,83,2026-07-02,round_of_32,,Switzerland,Algeria,True,2,0,regulation,Switzerland,team_a_win,2,0.31358853858107893,0.22674486248910986,0.4596665989298112,team_b_win,0,0
+m84,84,2026-07-02,round_of_32,,Portugal,Croatia,True,2,1,regulation,Portugal,team_a_win,2,0.5004253007206675,0.2269792862996599,0.2725954129796726,team_a_win,2,1
+m85,85,2026-07-02,round_of_32,,Spain,Austria,True,3,0,regulation,Spain,team_a_win,2,0.7153395886312703,0.21878331296806464,0.06587709840066508,team_a_win,2,1
+m86,86,2026-07-03,round_of_32,,Colombia,Ghana,True,1,0,regulation,Colombia,team_a_win,2,0.7100091634750187,0.1828276616609373,0.10716317486404399,team_a_win,2,1
+m87,87,2026-07-03,round_of_32,,Argentina,Cape Verde,True,3,2,regulation,Argentina,team_a_win,2,0.7720665567365878,0.19572302457121102,0.03221041869220131,team_a_win,2,1
+m88,88,2026-07-03,round_of_32,,Australia,Egypt,True,1,1,penalties,Egypt,draw,1,0.43281378480242827,0.2273752254719716,0.33981098972560014,team_a_win,2,0
+m89,89,2026-07-04,round_of_16,,Paraguay,France,True,0,1,regulation,France,team_b_win,0,0.06331010760489182,0.19684192272246176,0.7398479696726464,team_b_win,0,1
+m90,90,2026-07-04,round_of_16,,Canada,Morocco,True,0,3,regulation,Morocco,team_b_win,0,0.17775098241310236,0.23997707312168606,0.5822719444652116,team_b_win,0,1
+m91,91,2026-07-05,round_of_16,,Mexico,England,False,2,3,regulation,England,team_b_win,0,0.3023843563463027,0.29904246412054303,0.39857317953315424,team_b_win,0,1
+m92,92,2026-07-05,round_of_16,,Brazil,Norway,True,1,2,regulation,Norway,team_b_win,0,0.6247390858259476,0.20969247629568047,0.1655684378783719,team_a_win,2,0
+m93,93,2026-07-06,round_of_16,,United States,Belgium,False,1,4,regulation,Belgium,team_b_win,0,0.3506072772442307,0.22976506708158523,0.41962765567418414,team_b_win,0,1
+m94,94,2026-07-06,round_of_16,,Portugal,Spain,True,0,1,regulation,Spain,team_b_win,0,0.1823511280721885,0.2531602796199295,0.5644885923078821,team_b_win,0,1
+m95,95,2026-07-07,round_of_16,,Switzerland,Colombia,True,0,0,penalties,Switzerland,draw,1,0.3010141438576847,0.22390379474846808,0.4750820613938473,team_b_win,0,0
+m96,96,2026-07-07,round_of_16,,Argentina,Egypt,True,3,2,regulation,Argentina,team_a_win,2,0.6773243360709711,0.2295675554429505,0.09310810848607838,team_a_win,2,1
+m97,97,2026-07-09,quarter_final,,France,Morocco,True,2,0,regulation,France,team_a_win,2,0.4826809701466387,0.2592526874094966,0.25806634244386467,team_a_win,2,1
+m98,98,2026-07-10,quarter_final,,Spain,Belgium,True,2,1,regulation,Spain,team_a_win,2,0.6304424227529365,0.2332382803133009,0.13631929693376255,team_a_win,2,1
+m99,99,2026-07-11,quarter_final,,Argentina,Switzerland,True,3,1,regulation,Argentina,team_a_win,2,0.68133432221832,0.22337798887416743,0.09528768890751264,team_a_win,2,1
+m100,100,2026-07-11,quarter_final,,Norway,England,True,1,2,regulation,England,team_b_win,0,0.11843103504421601,0.21711050921647904,0.664458455739305,team_b_win,0,1
+m101,101,2026-07-14,semi_final,,France,Spain,True,0,2,regulation,Spain,team_b_win,0,0.2820624549152593,0.27278466206771645,0.4451528830170243,team_b_win,0,1
+m102,102,2026-07-15,semi_final,,England,Argentina,True,1,2,regulation,Argentina,team_b_win,0,0.23976178532666406,0.2733184532983195,0.4869197613750164,team_b_win,0,1
+m103,103,2026-07-18,third_place,,France,England,True,4,6,regulation,England,team_b_win,0,0.4310666038680722,0.26467084711411315,0.3042625490178147,team_a_win,2,0
+m104,104,2026-07-19,final,,Spain,Argentina,True,1,0,extra_time,Spain,team_a_win,2,0.374680539499857,0.2881774620111247,0.3371419984890183,team_a_win,2,1

@@ -1,6 +1,6 @@
 # 2026 World Cup result sources
 
-`world_cup_2026_actual_results.csv` is kept separate from the historical modelling file so tournament outcomes cannot enter the frozen Commit 11 pipeline.
+`world_cup_2026_actual_results.csv` is kept separate from the historical modelling file so tournament outcomes cannot enter the frozen historical modelling pipeline.
 
 ## Structured ground truth
 

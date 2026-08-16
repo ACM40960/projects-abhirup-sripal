@@ -1,8 +1,6 @@
 # Final project scope
 
-The functional pipeline is complete.
-
-Implemented components include:
+The implemented pipeline includes:
 
 - completed-match validation with deterministic `match_id`
 - leakage-safe recent form
@@ -16,11 +14,12 @@ Implemented components include:
 - team-specific current-state features
 - neutral-order-symmetric match probabilities
 - configurable 48-team-style Monte Carlo simulation
+- retrospective 2026 World Cup match-level validation
+- bootstrap uncertainty for the 104-match backtest
+- actual-field stage-progression validation
 
 The final probability model is selected after calibrating both learned candidates under the same temporal evaluation design.
 
-The remaining limitations are methodological rather than unfinished code: the model does not use bookmaker odds, player-level data, FIFA ratings, geography or climate; it predicts outcome classes rather than scorelines; and the tournament bracket is a transparent approximation rather than the official FIFA competition implementation.
+The post-tournament analysis is isolated from model development: tournament outcomes are used for evaluation only and are not used to retrain, retune or reselect the model.
 
-## Post-tournament extension
-
-Latest commit adds a retrospective 2026 World Cup backtest after the frozen previous commit pipeline. Actual outcomes are isolated from model development, probability metrics are reported with bootstrap uncertainty, and a separate actual-field simulation is compared with observed tournament progression.
+The remaining limitations are methodological rather than unfinished code. The model does not use bookmaker odds, player-level data, FIFA ratings, geography or climate; it predicts outcomes rather than scorelines; and the tournament mechanics are an approximation rather than an exact FIFA implementation.

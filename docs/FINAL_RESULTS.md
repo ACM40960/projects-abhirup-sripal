@@ -58,7 +58,7 @@ These are model outputs for the bundled demonstration field, not official World 
 
 ## Retrospective 2026 World Cup backtest
 
-The latest commit model is frozen before tournament outcomes enter the notebook. All 104 World Cup matches are evaluated from the same team-state snapshot ending on 31 March 2026.
+The selected model is frozen before tournament outcomes enter the retrospective analysis. All 104 World Cup matches are evaluated from the same team-state snapshot ending on 31 March 2026.
 
 | Metric | Estimate | 95% bootstrap interval |
 |---|---:|---:|

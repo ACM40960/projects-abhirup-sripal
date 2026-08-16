@@ -1,48 +1,64 @@
 # Literature review and final implementation alignment
 
-The PDF in `literature/25200786_Literature_Review.pdf` is retained as the original literature-review submission. It describes several methods and data sources that were considered during project planning but were not all implemented in the final notebook.
+The original literature review is retained at `literature/Literature_Review.pdf`.
 
-This note separates literature context from the final model.
+It was written before the final modelling pipeline was fixed, so it includes proposed data sources and methods that were not all implemented. The final report, notebook interpretation and poster should follow the implementation documented in this repository.
 
-## Implemented from the literature direction
+## Implemented ideas
 
 The final project uses:
 
 - historical international match results
 - Elo ratings
-- recent team form
-- match context through tournament importance and neutral venue
-- probabilistic model evaluation
-- calibration diagnostics
+- recent five-match form
+- tournament importance and neutral-venue context
+- chronological evaluation
+- probabilistic model comparison
+- temporal calibration diagnostics
 - Monte Carlo tournament simulation
 - a 48-team-style tournament structure
+- retrospective evaluation on the completed 2026 World Cup
 
-These elements remain consistent with the review's broad motivation around dynamic team strength, calibration and tournament-level uncertainty.
+These elements remain consistent with the review's broader motivation around dynamic team strength, probabilistic forecasting and tournament uncertainty.
 
-## Planned ideas that are not final model inputs
+## Discussed or proposed but not implemented
 
-The original review also discusses or describes:
+The final model does **not** use:
 
 - FIFA ratings
 - bookmaker odds
 - player-level squad ratings
 - Transfermarkt market values
-- host/geographic advantage scores
+- geographic advantage scores
 - climate similarity
 - travel distance
-- GDP and other macroeconomic indicators
-- XGBoost as the project classifier
+- GDP or other macroeconomic indicators
+- XGBoost
+- Poisson or hybrid scoreline modelling
+- a separate Elo-only probabilistic baseline
+- sequential in-tournament Elo/form updating
 
-Those items are not used by the final implementation.
-
-The final feature vector contains Elo, five-match goals-for and goals-against form, tournament weight and neutral-venue status. The final learned candidates are a Linear SVM and histogram gradient boosting, with the probability model selected after temporal calibration.
+The implemented learned candidates are a class-balanced Linear SVM and histogram gradient boosting. After temporal calibration, the Calibrated Linear SVM is selected by chronological test-set log loss.
 
 ## Historical range
 
-The raw results file contains matches back to the nineteenth century, but the final modelling period begins in 2000. This keeps the training data closer to contemporary international football while preserving the full source dataset in the repository.
+The raw source file extends back to the nineteenth century, but the final modelling period begins in 2000. The earlier records remain in the repository but are not used for model fitting.
 
-## Tournament claim
+## Tournament implementation
 
-The simulator follows a 48-team-style structure with 12 groups and a 32-team knockout stage, but it does not reproduce every official FIFA tiebreak, participant-selection or bracket rule. The default demonstration field is the top 48 teams in the current Elo snapshot.
+The project contains two tournament analyses:
 
-For the final report and poster, implementation claims should follow this alignment note rather than the earlier planned-method wording in the original literature-review PDF.
+- a generic top-48-Elo demonstration
+- a retrospective simulation using the actual 48-team 2026 group field
+
+Neither claims to reproduce every FIFA rule. Group ties use points followed by frozen Elo, the knockout mapping is a transparent approximation, and simulated tournament matchups are treated as neutral.
+
+## Post-tournament validation
+
+The completed 2026 World Cup is used only after model development.
+
+The final selected model and March 2026 team state are frozen before actual tournament outcomes are introduced. This is a retrospective backtest, not a claim that the predictions were timestamped and published prospectively.
+
+## Literature chronology
+
+The original PDF is preserved rather than silently rewritten to match the final code. Additional academic references used during later model evaluation and poster preparation are listed in the README/poster material and were incorporated after the original literature-review stage.

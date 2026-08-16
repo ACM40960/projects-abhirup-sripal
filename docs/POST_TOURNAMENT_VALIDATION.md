@@ -1,12 +1,12 @@
 # Post-tournament validation of the 2026 World Cup
 
-Latest commit adds a retrospective evaluation layer after the completed tournament. It does not modify the previous commit classifier, calibration procedure or selection rule.
+The retrospective evaluation layer runs after the completed tournament and does not modify the selected classifier, calibration procedure or model-selection rule.
 
 ## Freeze rules
 
 The backtest enforces the following constraints:
 
-- final probability model remains the previous commit Calibrated Linear SVM
+- final probability model remains the selected Calibrated Linear SVM
 - classifier training remains on matches before 1 January 2023
 - the existing chronological holdout remains unchanged
 - the Elo/form state uses completed project data only through 31 March 2026
@@ -23,7 +23,7 @@ The World Cup analysis therefore leads with multiclass log loss, multiclass Brie
 
 ## Small-sample uncertainty
 
-A World Cup contains only 104 matches. The latest commit uses 5,000 fixed-seed bootstrap resamples and reports 95% percentile intervals for accuracy, log loss and Brier score.
+A World Cup contains only 104 matches. The analysis uses 5,000 fixed-seed bootstrap resamples and reports 95% percentile intervals for accuracy, log loss and Brier score.
 
 These are descriptive uncertainty intervals, not a new model-selection exercise.
 
@@ -71,3 +71,8 @@ Repository: `graphuofm/FIFA2026LLM`
 The schedule and key knockout outcomes were cross-checked against FIFA's official 2026 World Cup fixtures/results pages and final tournament standings.
 
 The historical `data/results.csv` file remains unchanged. Actual tournament outcomes live only in `data/world_cup_2026_actual_results.csv`.
+
+
+## Venue assumption in tournament simulation
+
+The match-level backtest uses the recorded `neutral` flag for each actual fixture. The separate Monte Carlo tournament simulation treats simulated matchups as neutral, so it does not reproduce host-country venue advantage for Mexico, Canada or the United States.
