@@ -27,6 +27,17 @@ A World Cup contains only 104 matches. Commit 12 uses 5,000 fixed-seed bootstrap
 
 These are descriptive uncertainty intervals, not a new model-selection exercise.
 
+## Stage-progression validation
+
+Aggregate stage reach rates are not used as evidence of calibration. In a fixed 48-team tournament, exactly 32 teams reach the Round of 32, 16 reach the Round of 16, eight reach the quarter-finals, four reach the semi-finals, two reach the final and one becomes champion. By construction, the mean simulated reach probability across all 48 teams is therefore tied to those same fractions for any model.
+
+Tournament-level validation instead uses:
+
+- **per-team stage Brier score**, which penalises probability assigned to the wrong teams
+- **top-k capture rate**, which measures how many actual stage participants appear among the model's highest-probability teams for the same number of available places
+
+`outputs/world_cup_2026_stage_validation.csv` contains these team-level diagnostics.
+
 ## Actual-field tournament comparison
 
 A separate Monte Carlo run uses the actual 48-team group field.

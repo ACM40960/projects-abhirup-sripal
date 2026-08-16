@@ -15,7 +15,7 @@
 - [x] Keep the confusion matrix as a secondary diagnostic
 - [x] Add 5,000-resample bootstrap 95% intervals
 - [x] Simulate the actual 48-team group field
-- [x] Compare stage probabilities with actual progression
+- [x] Compare stage probabilities with actual progression using per-team Brier score and top-k capture rate
 - [x] Document the 72-day feature-freshness gap
 - [x] Document bracket and tiebreak simplifications
 - [x] Add post-tournament figures
