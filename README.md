@@ -314,7 +314,7 @@ The full literature review and the rest of the references are in the `literature
 
 ## Author
 
-**Abhirup Sripal**
+**Abhirup and Sripal**,
 MSc Data and Computational Science
 University College Dublin
 
