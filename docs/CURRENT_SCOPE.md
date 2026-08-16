@@ -20,3 +20,7 @@ Implemented components include:
 The final probability model is selected after calibrating both learned candidates under the same temporal evaluation design.
 
 The remaining limitations are methodological rather than unfinished code: the model does not use bookmaker odds, player-level data, FIFA ratings, geography or climate; it predicts outcome classes rather than scorelines; and the tournament bracket is a transparent approximation rather than the official FIFA competition implementation.
+
+## Post-tournament extension
+
+Commit 12 adds a retrospective 2026 World Cup backtest after the frozen Commit 11 pipeline. Actual outcomes are isolated from model development, probability metrics are reported with bootstrap uncertainty, and a separate actual-field simulation is compared with observed tournament progression.

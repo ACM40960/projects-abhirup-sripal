@@ -1,0 +1,10 @@
+actual_label,actual_name,predicted_label,predicted_name,count
+0,Away Win,0,Away Win,24
+0,Away Win,1,Draw,0
+0,Away Win,2,Home Win,7
+1,Draw,0,Away Win,11
+1,Draw,1,Draw,0
+1,Draw,2,Home Win,13
+2,Home Win,0,Away Win,10
+2,Home Win,1,Draw,0
+2,Home Win,2,Home Win,39

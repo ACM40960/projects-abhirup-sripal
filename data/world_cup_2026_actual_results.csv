@@ -1,0 +1,105 @@
+match_id,date,stage,group,team_a,team_b,source_team_a,source_team_b,source_orientation_flipped,final_score_a,final_score_b,outcome,decided_by,pen_a,pen_b,advanced_team,city,country,neutral,match_number
+m01,2026-06-11,group,A,Mexico,South Africa,Mexico,South Africa,0,2,0,team_a_win,regulation,,,,Mexico City,Mexico,False,1
+m02,2026-06-11,group,A,South Korea,Czech Republic,Korea Republic,Czechia,0,2,1,team_a_win,regulation,,,,Zapopan,Mexico,True,2
+m03,2026-06-12,group,D,United States,Paraguay,USA,Paraguay,0,4,1,team_a_win,regulation,,,,Inglewood,United States,False,3
+m04,2026-06-12,group,B,Canada,Bosnia and Herzegovina,Canada,Bosnia and Herzegovina,0,1,1,draw,regulation,,,,Toronto,Canada,False,4
+m05,2026-06-13,group,B,Qatar,Switzerland,Qatar,Switzerland,0,1,1,draw,regulation,,,,Santa Clara,United States,True,5
+m06,2026-06-13,group,C,Brazil,Morocco,Brazil,Morocco,0,1,1,draw,regulation,,,,East Rutherford,United States,True,6
+m07,2026-06-13,group,C,Haiti,Scotland,Haiti,Scotland,0,0,1,team_b_win,regulation,,,,Foxborough,United States,True,7
+m08,2026-06-13,group,D,Australia,Turkey,Australia,Türkiye,0,2,0,team_a_win,regulation,,,,Vancouver,Canada,True,8
+m09,2026-06-14,group,E,Germany,Curaçao,Germany,Curaçao,0,7,1,team_a_win,regulation,,,,Houston,United States,True,9
+m10,2026-06-14,group,F,Netherlands,Japan,Netherlands,Japan,0,2,2,draw,regulation,,,,Arlington,United States,True,10
+m11,2026-06-14,group,E,Ivory Coast,Ecuador,Côte d'Ivoire,Ecuador,0,1,0,team_a_win,regulation,,,,Philadelphia,United States,True,11
+m12,2026-06-14,group,F,Sweden,Tunisia,Sweden,Tunisia,0,5,1,team_a_win,regulation,,,,Guadalupe,Mexico,True,12
+m13,2026-06-15,group,H,Spain,Cape Verde,Spain,Cabo Verde,0,0,0,draw,regulation,,,,Atlanta,United States,True,13
+m14,2026-06-15,group,G,Iran,New Zealand,IR Iran,New Zealand,0,2,2,draw,regulation,,,,Inglewood,United States,True,14
+m15,2026-06-15,group,H,Saudi Arabia,Uruguay,Saudi Arabia,Uruguay,0,1,1,draw,regulation,,,,Miami Gardens,United States,True,15
+m16,2026-06-15,group,G,Belgium,Egypt,Belgium,Egypt,0,1,1,draw,regulation,,,,Seattle,United States,True,16
+m17,2026-06-16,group,J,Austria,Jordan,Austria,Jordan,0,3,1,team_a_win,regulation,,,,Santa Clara,United States,True,17
+m18,2026-06-16,group,I,France,Senegal,France,Senegal,0,3,1,team_a_win,regulation,,,,East Rutherford,United States,True,18
+m19,2026-06-16,group,I,Iraq,Norway,Iraq,Norway,0,1,4,team_b_win,regulation,,,,Foxborough,United States,True,19
+m20,2026-06-16,group,J,Argentina,Algeria,Argentina,Algeria,0,3,0,team_a_win,regulation,,,,Kansas City,United States,True,20
+m21,2026-06-17,group,K,Portugal,DR Congo,Portugal,Congo DR,0,1,1,draw,regulation,,,,Houston,United States,True,21
+m22,2026-06-17,group,L,England,Croatia,England,Croatia,0,4,2,team_a_win,regulation,,,,Arlington,United States,True,22
+m23,2026-06-17,group,L,Ghana,Panama,Ghana,Panama,0,1,0,team_a_win,regulation,,,,Toronto,Canada,True,23
+m24,2026-06-17,group,K,Uzbekistan,Colombia,Uzbekistan,Colombia,0,1,3,team_b_win,regulation,,,,Mexico City,Mexico,True,24
+m25,2026-06-18,group,A,Mexico,South Korea,Mexico,Korea Republic,0,1,0,team_a_win,regulation,,,,Zapopan,Mexico,False,25
+m26,2026-06-18,group,B,Canada,Qatar,Canada,Qatar,0,6,0,team_a_win,regulation,,,,Vancouver,Canada,False,26
+m27,2026-06-18,group,B,Switzerland,Bosnia and Herzegovina,Switzerland,Bosnia and Herzegovina,0,4,1,team_a_win,regulation,,,,Inglewood,United States,True,27
+m28,2026-06-18,group,A,Czech Republic,South Africa,Czechia,South Africa,0,1,1,draw,regulation,,,,Atlanta,United States,True,28
+m29,2026-06-19,group,D,United States,Australia,USA,Australia,0,2,0,team_a_win,regulation,,,,Seattle,United States,False,29
+m30,2026-06-19,group,D,Turkey,Paraguay,Türkiye,Paraguay,0,0,1,team_b_win,regulation,,,,Santa Clara,United States,True,30
+m31,2026-06-19,group,C,Brazil,Haiti,Brazil,Haiti,0,3,0,team_a_win,regulation,,,,Philadelphia,United States,True,31
+m32,2026-06-19,group,C,Scotland,Morocco,Scotland,Morocco,0,0,1,team_b_win,regulation,,,,Foxborough,United States,True,32
+m33,2026-06-20,group,F,Tunisia,Japan,Tunisia,Japan,0,0,4,team_b_win,regulation,,,,Guadalupe,Mexico,True,33
+m34,2026-06-20,group,E,Ecuador,Curaçao,Ecuador,Curaçao,0,0,0,draw,regulation,,,,Kansas City,United States,True,34
+m35,2026-06-20,group,E,Germany,Ivory Coast,Germany,Côte d'Ivoire,0,2,1,team_a_win,regulation,,,,Toronto,Canada,True,35
+m36,2026-06-20,group,F,Netherlands,Sweden,Netherlands,Sweden,0,5,1,team_a_win,regulation,,,,Houston,United States,True,36
+m37,2026-06-21,group,G,New Zealand,Egypt,New Zealand,Egypt,0,1,3,team_b_win,regulation,,,,Vancouver,Canada,True,37
+m38,2026-06-21,group,H,Uruguay,Cape Verde,Uruguay,Cabo Verde,0,2,2,draw,regulation,,,,Miami Gardens,United States,True,38
+m39,2026-06-21,group,G,Belgium,Iran,Belgium,IR Iran,0,0,0,draw,regulation,,,,Inglewood,United States,True,39
+m40,2026-06-21,group,H,Spain,Saudi Arabia,Spain,Saudi Arabia,0,4,0,team_a_win,regulation,,,,Atlanta,United States,True,40
+m41,2026-06-22,group,J,Jordan,Algeria,Jordan,Algeria,0,1,2,team_b_win,regulation,,,,Santa Clara,United States,True,41
+m42,2026-06-22,group,I,Norway,Senegal,Norway,Senegal,0,3,2,team_a_win,regulation,,,,East Rutherford,United States,True,42
+m43,2026-06-22,group,I,France,Iraq,France,Iraq,0,3,0,team_a_win,regulation,,,,Philadelphia,United States,True,43
+m44,2026-06-22,group,J,Argentina,Austria,Argentina,Austria,0,2,0,team_a_win,regulation,,,,Arlington,United States,True,44
+m45,2026-06-23,group,K,Colombia,DR Congo,Colombia,Congo DR,0,1,0,team_a_win,regulation,,,,Zapopan,Mexico,True,45
+m46,2026-06-23,group,L,Panama,Croatia,Panama,Croatia,0,0,1,team_b_win,regulation,,,,Toronto,Canada,True,46
+m47,2026-06-23,group,L,England,Ghana,England,Ghana,0,0,0,draw,regulation,,,,Foxborough,United States,True,47
+m48,2026-06-23,group,K,Portugal,Uzbekistan,Portugal,Uzbekistan,0,5,0,team_a_win,regulation,,,,Houston,United States,True,48
+m49,2026-06-24,group,A,South Africa,South Korea,South Africa,Korea Republic,0,1,0,team_a_win,regulation,,,,Guadalupe,Mexico,True,49
+m50,2026-06-24,group,A,Mexico,Czech Republic,Czechia,Mexico,1,3,0,team_a_win,regulation,,,,Mexico City,Mexico,False,50
+m51,2026-06-24,group,C,Morocco,Haiti,Morocco,Haiti,0,4,2,team_a_win,regulation,,,,Atlanta,United States,True,51
+m52,2026-06-24,group,C,Scotland,Brazil,Scotland,Brazil,0,0,3,team_b_win,regulation,,,,Miami Gardens,United States,True,52
+m53,2026-06-24,group,B,Bosnia and Herzegovina,Qatar,Bosnia and Herzegovina,Qatar,0,3,1,team_a_win,regulation,,,,Seattle,United States,True,53
+m54,2026-06-24,group,B,Canada,Switzerland,Switzerland,Canada,1,1,2,team_b_win,regulation,,,,Vancouver,Canada,False,54
+m55,2026-06-25,group,E,Curaçao,Ivory Coast,Curaçao,Côte d'Ivoire,0,0,2,team_b_win,regulation,,,,Philadelphia,United States,True,55
+m56,2026-06-25,group,E,Ecuador,Germany,Ecuador,Germany,0,2,1,team_a_win,regulation,,,,East Rutherford,United States,True,56
+m57,2026-06-25,group,F,Japan,Sweden,Japan,Sweden,0,1,1,draw,regulation,,,,Arlington,United States,True,57
+m58,2026-06-25,group,F,Tunisia,Netherlands,Tunisia,Netherlands,0,1,3,team_b_win,regulation,,,,Kansas City,United States,True,58
+m59,2026-06-25,group,D,United States,Turkey,Türkiye,USA,1,2,3,team_b_win,regulation,,,,Inglewood,United States,False,59
+m60,2026-06-25,group,D,Paraguay,Australia,Paraguay,Australia,0,0,0,draw,regulation,,,,Santa Clara,United States,True,60
+m61,2026-06-26,group,G,New Zealand,Belgium,New Zealand,Belgium,0,1,5,team_b_win,regulation,,,,Vancouver,Canada,True,61
+m62,2026-06-26,group,G,Egypt,Iran,Egypt,IR Iran,0,1,1,draw,regulation,,,,Seattle,United States,True,62
+m63,2026-06-26,group,H,Cape Verde,Saudi Arabia,Cabo Verde,Saudi Arabia,0,0,0,draw,regulation,,,,Houston,United States,True,63
+m64,2026-06-26,group,H,Uruguay,Spain,Uruguay,Spain,0,0,1,team_b_win,regulation,,,,Zapopan,Mexico,True,64
+m65,2026-06-26,group,I,Senegal,Iraq,Senegal,Iraq,0,5,0,team_a_win,regulation,,,,Toronto,Canada,True,65
+m66,2026-06-26,group,I,Norway,France,Norway,France,0,1,4,team_b_win,regulation,,,,Foxborough,United States,True,66
+m67,2026-06-27,group,J,Algeria,Austria,Algeria,Austria,0,3,3,draw,regulation,,,,Kansas City,United States,True,67
+m68,2026-06-27,group,J,Jordan,Argentina,Jordan,Argentina,0,1,3,team_b_win,regulation,,,,Arlington,United States,True,68
+m69,2026-06-27,group,K,Colombia,Portugal,Colombia,Portugal,0,0,0,draw,regulation,,,,Miami Gardens,United States,True,69
+m70,2026-06-27,group,K,DR Congo,Uzbekistan,Congo DR,Uzbekistan,0,3,1,team_a_win,regulation,,,,Atlanta,United States,True,70
+m71,2026-06-27,group,L,Croatia,Ghana,Croatia,Ghana,0,2,1,team_a_win,regulation,,,,Philadelphia,United States,True,71
+m72,2026-06-27,group,L,Panama,England,Panama,England,0,0,2,team_b_win,regulation,,,,East Rutherford,United States,True,72
+m73,2026-06-28,round_of_32,,South Africa,Canada,South Africa,Canada,0,0,1,team_b_win,regulation,,,Canada,Los Angeles,United States,True,73
+m74,2026-06-29,round_of_32,,Germany,Paraguay,Germany,Paraguay,0,1,1,draw,penalties,3.0,4.0,Paraguay,Boston,United States,True,74
+m75,2026-06-29,round_of_32,,Netherlands,Morocco,Netherlands,Morocco,0,1,1,draw,penalties,2.0,3.0,Morocco,Monterrey,Mexico,True,75
+m76,2026-06-29,round_of_32,,Brazil,Japan,Brazil,Japan,0,2,1,team_a_win,regulation,,,Brazil,Houston,United States,True,76
+m77,2026-06-30,round_of_32,,Mexico,Ecuador,Mexico,Ecuador,0,2,0,team_a_win,regulation,,,Mexico,Mexico City,Mexico,False,77
+m78,2026-06-30,round_of_32,,France,Sweden,France,Sweden,0,3,0,team_a_win,regulation,,,France,New Jersey,United States,True,78
+m79,2026-06-30,round_of_32,,Ivory Coast,Norway,Côte d'Ivoire,Norway,0,1,2,team_b_win,regulation,,,Norway,Dallas,United States,True,79
+m80,2026-07-01,round_of_32,,United States,Bosnia and Herzegovina,USA,Bosnia and Herzegovina,0,2,0,team_a_win,regulation,,,United States,San Francisco Bay Area,United States,False,80
+m81,2026-07-01,round_of_32,,Belgium,Senegal,Belgium,Senegal,0,3,2,team_a_win,regulation,,,Belgium,Seattle,United States,True,81
+m82,2026-07-01,round_of_32,,England,DR Congo,England,Congo DR,0,2,1,team_a_win,regulation,,,England,Atlanta,United States,True,82
+m83,2026-07-02,round_of_32,,Switzerland,Algeria,Switzerland,Algeria,0,2,0,team_a_win,regulation,,,Switzerland,Vancouver,Canada,True,83
+m84,2026-07-02,round_of_32,,Portugal,Croatia,Portugal,Croatia,0,2,1,team_a_win,regulation,,,Portugal,Toronto,Canada,True,84
+m85,2026-07-02,round_of_32,,Spain,Austria,Spain,Austria,0,3,0,team_a_win,regulation,,,Spain,Los Angeles,United States,True,85
+m86,2026-07-03,round_of_32,,Colombia,Ghana,Colombia,Ghana,0,1,0,team_a_win,regulation,,,Colombia,Kansas City,United States,True,86
+m87,2026-07-03,round_of_32,,Argentina,Cape Verde,Argentina,Cabo Verde,0,3,2,team_a_win,regulation,,,Argentina,Miami,United States,True,87
+m88,2026-07-03,round_of_32,,Australia,Egypt,Australia,Egypt,0,1,1,draw,penalties,2.0,4.0,Egypt,Dallas,United States,True,88
+m89,2026-07-04,round_of_16,,Paraguay,France,Paraguay,France,0,0,1,team_b_win,regulation,,,France,Philadelphia,United States,True,89
+m90,2026-07-04,round_of_16,,Canada,Morocco,Canada,Morocco,0,0,3,team_b_win,regulation,,,Morocco,Houston,United States,True,90
+m91,2026-07-05,round_of_16,,Mexico,England,Mexico,England,0,2,3,team_b_win,regulation,,,England,Mexico City,Mexico,False,91
+m92,2026-07-05,round_of_16,,Brazil,Norway,Brazil,Norway,0,1,2,team_b_win,regulation,,,Norway,New Jersey,United States,True,92
+m93,2026-07-06,round_of_16,,United States,Belgium,USA,Belgium,0,1,4,team_b_win,regulation,,,Belgium,Seattle,United States,False,93
+m94,2026-07-06,round_of_16,,Portugal,Spain,Portugal,Spain,0,0,1,team_b_win,regulation,,,Spain,Dallas,United States,True,94
+m95,2026-07-07,round_of_16,,Switzerland,Colombia,Switzerland,Colombia,0,0,0,draw,penalties,4.0,3.0,Switzerland,Vancouver,Canada,True,95
+m96,2026-07-07,round_of_16,,Argentina,Egypt,Argentina,Egypt,0,3,2,team_a_win,regulation,,,Argentina,Atlanta,United States,True,96
+m97,2026-07-09,quarter_final,,France,Morocco,France,Morocco,0,2,0,team_a_win,regulation,,,France,Boston,United States,True,97
+m98,2026-07-10,quarter_final,,Spain,Belgium,Spain,Belgium,0,2,1,team_a_win,regulation,,,Spain,Los Angeles,United States,True,98
+m99,2026-07-11,quarter_final,,Argentina,Switzerland,Argentina,Switzerland,0,3,1,team_a_win,regulation,,,Argentina,Kansas City,United States,True,99
+m100,2026-07-11,quarter_final,,Norway,England,Norway,England,0,1,2,team_b_win,regulation,,,England,Miami,United States,True,100
+m101,2026-07-14,semi_final,,France,Spain,France,Spain,0,0,2,team_b_win,regulation,,,Spain,Dallas,United States,True,101
+m102,2026-07-15,semi_final,,England,Argentina,England,Argentina,0,1,2,team_b_win,regulation,,,Argentina,Atlanta,United States,True,102
+m103,2026-07-18,third_place,,France,England,France,England,0,4,6,team_b_win,regulation,,,England,Miami,United States,True,103
+m104,2026-07-19,final,,Spain,Argentina,Spain,Argentina,0,1,0,team_a_win,extra_time,,,Spain,New Jersey,United States,True,104

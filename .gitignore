@@ -21,3 +21,10 @@ outputs/*.pkl
 Thumbs.db
 .vscode/
 .idea/
+
+# Local Anaconda/Jupyter artefacts
+.virtual_documents/
+anaconda_projects/
+
+# Accidental terminal capture
+tatus

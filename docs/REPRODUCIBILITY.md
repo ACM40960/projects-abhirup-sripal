@@ -29,3 +29,15 @@ The code includes compatibility handling for the `CalibratedClassifierCV` constr
 Execution outputs are cleared in the committed notebook. Run all cells from a fresh kernel to regenerate the CSV and figure outputs.
 
 The obsolete `Chapter 1` / `Chapter 2` placeholders, standalone PCA/correlation experiment and redundant pre-Elo scaler have been removed from the final notebook.
+
+## Commit 12 retrospective checks
+
+A fresh run should also reproduce:
+
+- 104 completed World Cup backtest matches
+- 48 World Cup participants
+- zero completed World Cup matches in model-development data
+- 5,000 bootstrap resamples with seed 2026
+- 2,000 actual-field tournament simulations with seed 2026
+
+The tournament ground-truth file is separate from `data/results.csv`, preserving the pre-tournament historical source file.

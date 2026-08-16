@@ -54,3 +54,43 @@ The bundled tournament is a 2,000-iteration, seed-42 demonstration using the top
 | Brazil      |                 0.0280 |              0.0645 |           0.1625 |
 
 These are model outputs for the bundled demonstration field, not official World Cup probabilities.
+
+
+## Retrospective 2026 World Cup backtest
+
+The Commit 11 model is frozen before tournament outcomes enter the notebook. All 104 World Cup matches are evaluated from the same team-state snapshot ending on 31 March 2026.
+
+| Metric | Estimate | 95% bootstrap interval |
+|---|---:|---:|
+| Accuracy | 0.606 | 0.510–0.702 |
+| Log loss | 0.884 | 0.786–0.984 |
+| Multiclass Brier | 0.524 | 0.452–0.597 |
+
+The historical class-prior baseline scores **47.1%** accuracy, **1.054** log loss and **0.636** Brier on the same tournament matches.
+
+### Draw interpretation
+
+The tournament draw rate is **23.1%** and the frozen model assigns a mean draw probability of **21.5%**. Draw is never the argmax class in this 104-match sample, so argmax draw recall is **0%**.
+
+That is consistent with the behaviour already identified on the larger chronological holdout: draw recall describes hard classification, while the Monte Carlo system consumes the full probability vector. World Cup probability scoring therefore remains the primary post-tournament diagnostic.
+
+### Group versus knockout performance
+
+| split          |   matches |   accuracy |   log_loss |   multiclass_brier |   actual_draw_rate |   mean_predicted_draw_probability |   argmax_draw_prediction_rate |   argmax_draw_recall |
+|:---------------|----------:|-----------:|-----------:|-------------------:|-------------------:|----------------------------------:|------------------------------:|---------------------:|
+| Overall        |       104 |     0.6058 |     0.8840 |             0.5236 |             0.2308 |                            0.2150 |                        0.0000 |               0.0000 |
+| Group stage    |        72 |     0.5556 |     0.9301 |             0.5589 |             0.2778 |                            0.2085 |                        0.0000 |               0.0000 |
+| Knockout stage |        32 |     0.7188 |     0.7801 |             0.4440 |             0.1250 |                            0.2294 |                        0.0000 |               0.0000 |
+
+The stronger knockout-stage point estimate should not be overinterpreted: only 32 knockout matches are available, and the analysis is explicitly presented as a single-tournament stress test rather than a new model-selection set.
+
+### Actual-field tournament comparison
+
+The separate 2,000-run simulation uses the actual 48-team group field while retaining the project's documented approximate knockout mapping.
+
+- Spain: **25.7%** title probability, rank **1**, actual finish **Champion**
+- Argentina: **21.2%**, rank **2**, actual finish **Runner-up**
+- England: **7.4%**, rank **4**, actual finish **Third**
+- France: **12.4%**, rank **3**, actual finish **Fourth**
+
+These retrospective outputs do not replace the main 2023–March 2026 chronological holdout and were not used to retune or reselect the classifier.

@@ -1,0 +1,17 @@
+metric,value
+selected_model,Calibrated Linear SVM
+model_training_end,2022-12-30
+historical_holdout_end,2026-03-31
+pre_tournament_state_data_end,2026-03-31
+world_cup_start,2026-06-11
+world_cup_end,2026-07-19
+state_to_world_cup_gap_days,72
+world_cup_matches_evaluated,104
+world_cup_participants,48
+world_cup_matches_in_model_data,0
+world_cup_outcomes_used_for_retraining,0
+world_cup_outcomes_used_for_model_reselection,0
+bootstrap_iterations,5000
+bootstrap_seed,2026
+actual_field_simulation_iterations,2000
+actual_field_simulation_seed,2026

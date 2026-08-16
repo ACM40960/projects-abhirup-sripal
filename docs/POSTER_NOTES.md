@@ -47,3 +47,27 @@ The champion chart is a demonstration of the model pipeline, not an official 202
 ## Short conclusion
 
 The project shows that a compact feature set based on Elo, recent form and match context can outperform a class-prior baseline and produce calibrated probabilities suitable for simulation. The strongest remaining limitations are the absence of scoreline modelling, richer player/market features and an exact official tournament bracket.
+
+
+## Post-tournament validation box
+
+**Retrospective 2026 World Cup validation — model frozen before tournament outcomes**
+
+- 104 matches evaluated
+- Accuracy: **60.6%** (95% bootstrap CI 51.0%–70.2%)
+- Log loss: **0.884** (95% CI 0.786–0.984)
+- Brier score: **0.524** (95% CI 0.452–0.597)
+- Actual draw rate: **23.1%**
+- Mean predicted draw probability: **21.5%**
+- Historical-data state ends 31 March 2026, 72 days before the opening match
+- World Cup outcomes used for retraining or model reselection: **0**
+
+**Draw explanation:** the model does not make Draw its argmax class in the 104-match backtest, but it still allocates about one-fifth of its probability mass to draws. The poster should therefore keep log loss, Brier score and draw-probability calibration ahead of bare draw recall.
+
+**Actual-field simulation:** Spain receives a **25.7%** title probability and rank **1** in the frozen actual-field simulation; Spain then actually won the tournament.
+
+Recommended new figures:
+
+- `outputs/figures/world_cup_2026_probability_performance.png`
+- `outputs/figures/world_cup_2026_draw_calibration.png`
+- `outputs/figures/world_cup_2026_expected_vs_actual.png`
