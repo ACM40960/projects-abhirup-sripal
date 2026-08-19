@@ -174,6 +174,7 @@ Useful extensions include player/squad availability, bookmaker probability compa
 
 ## Authors
 
-**Abhirup and Sripal**  
+**Abhirup Mitra and G Venkata Sai Sripal**  
+**25200786 and 25214828**
 MSc Data and Computational Science  
 University College Dublin
