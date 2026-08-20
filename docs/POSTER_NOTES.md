@@ -2,7 +2,7 @@
 
 ## Suggested title
 
-**Predicting International Football Match Outcomes and Tournament Progression with Elo, Recent Form and Calibrated Machine Learning**
+**Predicting World Cup Outcomes with Elo Ratings and Machine Learning**
 
 ## Research question
 
@@ -20,10 +20,11 @@ Historical results -> validation -> rolling form + Elo -> tournament context -> 
 - Final model: Calibrated Linear SVM
 - Test log loss: 0.892
 - Multiclass Brier score: 0.525
-- Test accuracy: 59.6%
-- Test draw rate: 23.1%
-- Mean predicted draw probability: 22.4%
-- 2,000 tournament simulations in the bundled demonstration
+- Test accuracy: 59.62%
+- Test draw rate: 23.08%
+- Mean predicted draw probability: 22.45%
+- Generic simulator demonstration: 2,000 runs, seed 42
+- Final actual-field simulation: 2,000 runs, seed 2026
 
 ## Draw question likely to come up
 
@@ -35,7 +36,12 @@ Balanced histogram gradient boosting was also temporally calibrated in the final
 
 ## Tournament result caveat
 
-The champion chart is a demonstration of the model pipeline, not an official 2026 prediction. The field is the top 48 current-Elo teams in the repository snapshot, group ties use Elo after points, and the knockout bracket is a seeded approximation.
+Two Monte Carlo runs are retained in the repository and should not be conflated.
+
+- **Generic demonstration (`03_team_prediction_and_tournament.ipynb`):** top 48 teams in the frozen Elo snapshot, constructed groups, 2,000 runs, seed 42. This is a simulator demonstration rather than an official World Cup forecast.
+- **Final actual-field simulation (`04_world_cup_2026_backtest.ipynb`):** actual 48-team 2026 field and actual group allocation, frozen team state ending 31 March 2026, 2,000 runs, seed 2026. This is the run represented by the final poster champion chart.
+
+The actual-field simulation uses no World Cup match outcomes to generate the champion probabilities. Actual results are attached afterwards for retrospective comparison. The knockout bracket remains the project's transparent seeded approximation rather than an exact FIFA reconstruction.
 
 ## Recommended visuals
 
@@ -64,7 +70,9 @@ The project shows that a compact feature set based on Elo, recent form and match
 
 **Draw explanation:** the model does not make Draw its argmax class in the 104-match backtest, but it still allocates about one-fifth of its probability mass to draws. The poster should therefore keep log loss, Brier score and draw-probability calibration ahead of bare draw recall.
 
-**Actual-field simulation:** Spain receives a **25.7%** title probability and rank **1** in the frozen actual-field simulation; Spain then actually won the tournament.
+**Actual-field simulation:** the final poster chart uses the frozen actual 48-team field/group configuration, 2,000 runs and seed 2026. Spain receives a **25.7%** title probability and rank **1**, while Argentina receives **21.2%** and rank **2**. Spain's eventual championship result is not an input to these probabilities; it is added afterwards for retrospective comparison.
+
+**Separation from the backtest:** the 2,000-run actual-field simulation is not used to calculate the 104-match accuracy, log loss or Brier score. The backtest scores the frozen model on the 104 completed matches, and 5,000 bootstrap resamples with seed 2026 quantify uncertainty in those metrics.
 
 Recommended new figures:
 

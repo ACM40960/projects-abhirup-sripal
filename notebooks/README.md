@@ -21,7 +21,8 @@ The final analysis is split into four notebooks so each stage has a clear respon
 4. `04_world_cup_2026_backtest.ipynb`
    - loads the frozen selected model
    - evaluates all 104 completed World Cup matches
-   - reports bootstrap uncertainty and actual-field progression validation
+   - estimates metric uncertainty with 5,000 bootstrap resamples, seed 2026
+   - separately runs the actual-field 48-team tournament simulation for 2,000 iterations, seed 2026
 
 Each notebook starts from files on disk rather than depending on variables left in another notebook's kernel.
 

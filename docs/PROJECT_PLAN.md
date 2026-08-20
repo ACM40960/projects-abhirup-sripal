@@ -20,4 +20,4 @@ Completed development stages:
 ## Post-tournament extension
 
 15. [x] Add retrospective 2026 World Cup validation using the frozen selected model
-16. [x] Add bootstrap uncertainty and actual-field progression comparison
+16. [x] Add bootstrap uncertainty and a separate actual-field tournament comparison

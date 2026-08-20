@@ -13,10 +13,11 @@ The implemented pipeline includes:
 - log loss, multiclass Brier score, per-class recall and confusion matrices
 - team-specific current-state features
 - neutral-order-symmetric match probabilities
-- configurable 48-team-style Monte Carlo simulation
+- generic 48-team Monte Carlo demonstration (2,000 runs, seed 42)
+- retrospective actual-field Monte Carlo comparison (2,000 runs, seed 2026)
 - retrospective 2026 World Cup match-level validation
 - bootstrap uncertainty for the 104-match backtest
-- actual-field stage-progression validation
+- actual-field retrospective tournament comparison
 
 The final probability model is selected after calibrating both learned candidates under the same temporal evaluation design.
 

@@ -23,11 +23,11 @@ The World Cup analysis therefore leads with multiclass log loss, multiclass Brie
 
 ## Small-sample uncertainty
 
-A World Cup contains only 104 matches. The analysis uses 5,000 fixed-seed bootstrap resamples and reports 95% percentile intervals for accuracy, log loss and Brier score.
+A World Cup contains only 104 matches. The analysis uses 5,000 bootstrap resamples with seed 2026 and reports 95% percentile intervals for accuracy, log loss and Brier score.
 
 These are descriptive uncertainty intervals, not a new model-selection exercise.
 
-## Stage-progression validation
+## Stage-progression retrospective comparison
 
 Aggregate stage reach rates are not used as evidence of calibration. In a fixed 48-team tournament, exactly 32 teams reach the Round of 32, 16 reach the Round of 16, eight reach the quarter-finals, four reach the semi-finals, two reach the final and one becomes champion. By construction, the mean simulated reach probability across all 48 teams is therefore tied to those same fractions for any model.
 
@@ -40,7 +40,9 @@ Tournament-level validation instead uses:
 
 ## Actual-field tournament comparison
 
-A separate Monte Carlo run uses the actual 48-team group field.
+A separate **2,000-run Monte Carlo tournament simulation with seed 2026** uses the actual 48-team field and actual group allocation while retaining the frozen pre-tournament model state.
+
+This Monte Carlo analysis is a sibling of the 104-match backtest, not a step inside it. It is not used to calculate backtest accuracy, log loss, Brier score or bootstrap intervals.
 
 The original project tournament assumptions remain:
 
@@ -48,7 +50,7 @@ The original project tournament assumptions remain:
 - the knockout stage uses the project's transparent seeded pairing heuristic
 - knockout draws use relative non-draw probabilities for advancement
 
-The output is an actual-field validation of the model's expectations, not a reconstruction of every official FIFA bracket and tiebreak rule.
+The output is an actual-field retrospective comparison of the model's tournament expectations, not a reconstruction of every official FIFA bracket and tiebreak rule.
 
 ## Feature freshness
 

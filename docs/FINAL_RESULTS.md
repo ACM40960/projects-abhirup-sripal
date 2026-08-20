@@ -86,11 +86,11 @@ The stronger knockout-stage point estimate should not be overinterpreted: only 3
 
 ### Actual-field tournament comparison
 
-The separate 2,000-run simulation uses the actual 48-team group field while retaining the project's documented approximate knockout mapping.
+The separate actual-field simulation uses the **actual 48-team field and actual group allocation**, the frozen team state ending on **31 March 2026**, **2,000 runs**, and **seed 2026**, while retaining the project's documented approximate knockout mapping. World Cup match outcomes are not inputs to these champion probabilities; actual finishes are attached afterwards for retrospective comparison.
 
 - Spain: **25.7%** title probability, rank **1**, actual finish **Champion**
 - Argentina: **21.2%**, rank **2**, actual finish **Runner-up**
 - England: **7.4%**, rank **4**, actual finish **Third**
 - France: **12.4%**, rank **3**, actual finish **Fourth**
 
-These retrospective outputs do not replace the main 2023–March 2026 chronological holdout and were not used to retune or reselect the classifier.
+These retrospective outputs do not replace the main 2023–March 2026 chronological holdout and were not used to retune or reselect the classifier. The tournament simulation is separate from the 104-match backtest and is not used to calculate its match-level metrics.
